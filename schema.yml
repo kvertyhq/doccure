@@ -1,0 +1,458 @@
+openapi: 3.0.3
+info:
+  title: Doccure API
+  version: 1.0.0
+  description: API documentation for the Doccure healthcare platform.
+paths:
+  /accounts/update-basic-information/:
+    put:
+      operationId: accounts_update_basic_information_update
+      description: Verify that the current user is authenticated.
+      tags:
+      - accounts
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BasicUserInformation'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/BasicUserInformation'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/BasicUserInformation'
+        required: true
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BasicUserInformation'
+          description: ''
+    patch:
+      operationId: accounts_update_basic_information_partial_update
+      description: Verify that the current user is authenticated.
+      tags:
+      - accounts
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PatchedBasicUserInformation'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PatchedBasicUserInformation'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PatchedBasicUserInformation'
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BasicUserInformation'
+          description: ''
+  /doctors/update-education:
+    put:
+      operationId: doctors_update_education_update
+      description: Verify that the current user is authenticated and user is patient
+      tags:
+      - doctors
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Education'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Education'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Education'
+        required: true
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Education'
+          description: ''
+    patch:
+      operationId: doctors_update_education_partial_update
+      description: Verify that the current user is authenticated and user is patient
+      tags:
+      - doctors
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PatchedEducation'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PatchedEducation'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PatchedEducation'
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Education'
+          description: ''
+  /doctors/update-experience:
+    put:
+      operationId: doctors_update_experience_update
+      description: Verify that the current user is authenticated and user is patient
+      tags:
+      - doctors
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Experience'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Experience'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Experience'
+        required: true
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Experience'
+          description: ''
+    patch:
+      operationId: doctors_update_experience_partial_update
+      description: Verify that the current user is authenticated and user is patient
+      tags:
+      - doctors
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PatchedExperience'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PatchedExperience'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PatchedExperience'
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Experience'
+          description: ''
+  /doctors/update-registration-number:
+    put:
+      operationId: doctors_update_registration_number_update
+      description: Verify that the current user is authenticated and user is patient
+      tags:
+      - doctors
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegistrationNumber'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/RegistrationNumber'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/RegistrationNumber'
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RegistrationNumber'
+          description: ''
+    patch:
+      operationId: doctors_update_registration_number_partial_update
+      description: Verify that the current user is authenticated and user is patient
+      tags:
+      - doctors
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PatchedRegistrationNumber'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PatchedRegistrationNumber'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PatchedRegistrationNumber'
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RegistrationNumber'
+          description: ''
+  /doctors/update-specialization:
+    put:
+      operationId: doctors_update_specialization_update
+      description: Verify that the current user is authenticated and user is patient
+      tags:
+      - doctors
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Specialization'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Specialization'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Specialization'
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Specialization'
+          description: ''
+    patch:
+      operationId: doctors_update_specialization_partial_update
+      description: Verify that the current user is authenticated and user is patient
+      tags:
+      - doctors
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PatchedSpecialization'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PatchedSpecialization'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PatchedSpecialization'
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Specialization'
+          description: ''
+components:
+  schemas:
+    BasicUserInformation:
+      type: object
+      properties:
+        first_name:
+          type: string
+        last_name:
+          type: string
+        dob:
+          type: string
+          format: date
+          nullable: true
+        phone:
+          type: string
+        email:
+          type: string
+          format: email
+      required:
+      - first_name
+      - last_name
+    Education:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        college:
+          type: string
+          maxLength: 300
+        degree:
+          type: string
+          maxLength: 100
+        year_of_completion:
+          type: integer
+          maximum: 9223372036854775807
+          minimum: -9223372036854775808
+          format: int64
+          nullable: true
+      required:
+      - college
+      - degree
+      - id
+    Experience:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        institution:
+          type: string
+          maxLength: 300
+        from_year:
+          type: integer
+          maximum: 9223372036854775807
+          minimum: -9223372036854775808
+          format: int64
+          nullable: true
+        to_year:
+          type: integer
+          maximum: 9223372036854775807
+          minimum: -9223372036854775808
+          format: int64
+          nullable: true
+        designation:
+          type: string
+          nullable: true
+          maxLength: 200
+      required:
+      - id
+      - institution
+    PatchedBasicUserInformation:
+      type: object
+      properties:
+        first_name:
+          type: string
+        last_name:
+          type: string
+        dob:
+          type: string
+          format: date
+          nullable: true
+        phone:
+          type: string
+        email:
+          type: string
+          format: email
+    PatchedEducation:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        college:
+          type: string
+          maxLength: 300
+        degree:
+          type: string
+          maxLength: 100
+        year_of_completion:
+          type: integer
+          maximum: 9223372036854775807
+          minimum: -9223372036854775808
+          format: int64
+          nullable: true
+    PatchedExperience:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        institution:
+          type: string
+          maxLength: 300
+        from_year:
+          type: integer
+          maximum: 9223372036854775807
+          minimum: -9223372036854775808
+          format: int64
+          nullable: true
+        to_year:
+          type: integer
+          maximum: 9223372036854775807
+          minimum: -9223372036854775808
+          format: int64
+          nullable: true
+        designation:
+          type: string
+          nullable: true
+          maxLength: 200
+    PatchedRegistrationNumber:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        registration_number:
+          type: integer
+          maximum: 9223372036854775807
+          minimum: -9223372036854775808
+          format: int64
+          nullable: true
+    PatchedSpecialization:
+      type: object
+      properties:
+        specialization:
+          type: string
+    RegistrationNumber:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        registration_number:
+          type: integer
+          maximum: 9223372036854775807
+          minimum: -9223372036854775808
+          format: int64
+          nullable: true
+      required:
+      - id
+    Specialization:
+      type: object
+      properties:
+        specialization:
+          type: string
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: sessionid

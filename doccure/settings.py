@@ -23,7 +23,9 @@ INSTALLED_APPS = [
     "patients",
     "bookings",
     "ckeditor",
-    "drf_spectacular"
+    "drf_spectacular",
+    "rest_framework.authtoken",
+    "api",
 ]
 
 MIDDLEWARE = [
@@ -136,6 +138,10 @@ DEBUG_TOOLBAR_CONFIG = {
 
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "api.auth.BearerTokenAuthentication",
+        "rest_framework.authentication.SessionAuthentication",
+    ],
 }
 
 SPECTACULAR_SETTINGS = {
