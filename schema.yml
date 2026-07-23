@@ -23,8 +23,8 @@ paths:
               $ref: '#/components/schemas/BasicUserInformation'
         required: true
       security:
+      - tokenAuth: []
       - cookieAuth: []
-      - basicAuth: []
       - {}
       responses:
         '200':
@@ -50,8 +50,8 @@ paths:
             schema:
               $ref: '#/components/schemas/PatchedBasicUserInformation'
       security:
+      - tokenAuth: []
       - cookieAuth: []
-      - basicAuth: []
       - {}
       responses:
         '200':
@@ -59,6 +59,216 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/BasicUserInformation'
+          description: ''
+  /api/v1/auth/login:
+    post:
+      operationId: api_v1_auth_login_create
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Login'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Login'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Login'
+        required: true
+      security:
+      - tokenAuth: []
+      - cookieAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Login'
+          description: ''
+  /api/v1/book-appointment:
+    post:
+      operationId: api_v1_book_appointment_create
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BookingResponse'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/BookingResponse'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/BookingResponse'
+        required: true
+      security:
+      - tokenAuth: []
+      - cookieAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BookingResponse'
+          description: ''
+  /api/v1/cancel-appointment:
+    post:
+      operationId: api_v1_cancel_appointment_create
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BookingResponse'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/BookingResponse'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/BookingResponse'
+        required: true
+      security:
+      - tokenAuth: []
+      - cookieAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BookingResponse'
+          description: ''
+  /api/v1/customer:
+    get:
+      operationId: api_v1_customer_retrieve
+      tags:
+      - api
+      security:
+      - tokenAuth: []
+      - cookieAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Patient'
+          description: ''
+  /api/v1/departments:
+    get:
+      operationId: api_v1_departments_retrieve
+      tags:
+      - api
+      security:
+      - tokenAuth: []
+      - cookieAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Department'
+          description: ''
+  /api/v1/doctor-schedule:
+    get:
+      operationId: api_v1_doctor_schedule_retrieve
+      tags:
+      - api
+      security:
+      - tokenAuth: []
+      - cookieAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Doctor'
+          description: ''
+  /api/v1/doctors:
+    get:
+      operationId: api_v1_doctors_retrieve
+      tags:
+      - api
+      security:
+      - tokenAuth: []
+      - cookieAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Doctor'
+          description: ''
+  /api/v1/my-appointments:
+    get:
+      operationId: api_v1_my_appointments_retrieve
+      tags:
+      - api
+      security:
+      - tokenAuth: []
+      - cookieAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Appointment'
+          description: ''
+  /api/v1/register-patient:
+    post:
+      operationId: api_v1_register_patient_create
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Patient'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Patient'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Patient'
+      security:
+      - tokenAuth: []
+      - cookieAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Patient'
+          description: ''
+  /api/v1/reschedule-appointment:
+    post:
+      operationId: api_v1_reschedule_appointment_create
+      tags:
+      - api
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BookingResponse'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/BookingResponse'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/BookingResponse'
+        required: true
+      security:
+      - tokenAuth: []
+      - cookieAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BookingResponse'
           description: ''
   /doctors/update-education:
     put:
@@ -79,8 +289,8 @@ paths:
               $ref: '#/components/schemas/Education'
         required: true
       security:
+      - tokenAuth: []
       - cookieAuth: []
-      - basicAuth: []
       - {}
       responses:
         '200':
@@ -106,8 +316,8 @@ paths:
             schema:
               $ref: '#/components/schemas/PatchedEducation'
       security:
+      - tokenAuth: []
       - cookieAuth: []
-      - basicAuth: []
       - {}
       responses:
         '200':
@@ -135,8 +345,8 @@ paths:
               $ref: '#/components/schemas/Experience'
         required: true
       security:
+      - tokenAuth: []
       - cookieAuth: []
-      - basicAuth: []
       - {}
       responses:
         '200':
@@ -162,8 +372,8 @@ paths:
             schema:
               $ref: '#/components/schemas/PatchedExperience'
       security:
+      - tokenAuth: []
       - cookieAuth: []
-      - basicAuth: []
       - {}
       responses:
         '200':
@@ -190,8 +400,8 @@ paths:
             schema:
               $ref: '#/components/schemas/RegistrationNumber'
       security:
+      - tokenAuth: []
       - cookieAuth: []
-      - basicAuth: []
       - {}
       responses:
         '200':
@@ -217,8 +427,8 @@ paths:
             schema:
               $ref: '#/components/schemas/PatchedRegistrationNumber'
       security:
+      - tokenAuth: []
       - cookieAuth: []
-      - basicAuth: []
       - {}
       responses:
         '200':
@@ -245,8 +455,8 @@ paths:
             schema:
               $ref: '#/components/schemas/Specialization'
       security:
+      - tokenAuth: []
       - cookieAuth: []
-      - basicAuth: []
       - {}
       responses:
         '200':
@@ -272,8 +482,8 @@ paths:
             schema:
               $ref: '#/components/schemas/PatchedSpecialization'
       security:
+      - tokenAuth: []
       - cookieAuth: []
-      - basicAuth: []
       - {}
       responses:
         '200':
@@ -284,6 +494,27 @@ paths:
           description: ''
 components:
   schemas:
+    Appointment:
+      type: object
+      properties:
+        appointment_id:
+          type: integer
+        doctor:
+          type: string
+          readOnly: true
+        date:
+          type: string
+          format: date
+        time:
+          type: string
+          readOnly: true
+        status:
+          $ref: '#/components/schemas/StatusEnum'
+      required:
+      - appointment_id
+      - date
+      - doctor
+      - time
     BasicUserInformation:
       type: object
       properties:
@@ -303,6 +534,70 @@ components:
       required:
       - first_name
       - last_name
+    BookingResponse:
+      type: object
+      properties:
+        appointment_id:
+          type: integer
+          readOnly: true
+        token:
+          type: string
+          readOnly: true
+        doctor:
+          type: string
+          readOnly: true
+        patient:
+          type: string
+          readOnly: true
+        date:
+          type: string
+          format: date
+        time:
+          type: string
+          readOnly: true
+        status:
+          $ref: '#/components/schemas/StatusEnum'
+      required:
+      - appointment_id
+      - date
+      - doctor
+      - patient
+      - time
+      - token
+    Department:
+      type: object
+      properties:
+        department:
+          type: string
+        doctor_count:
+          type: string
+          readOnly: true
+        doctors:
+          type: string
+          readOnly: true
+      required:
+      - department
+      - doctor_count
+      - doctors
+    Doctor:
+      type: object
+      properties:
+        doctor_id:
+          type: integer
+        name:
+          type: string
+          readOnly: true
+        specialization:
+          type: string
+          readOnly: true
+        next_available:
+          type: string
+          readOnly: true
+      required:
+      - doctor_id
+      - name
+      - next_available
+      - specialization
     Education:
       type: object
       properties:
@@ -353,6 +648,18 @@ components:
       required:
       - id
       - institution
+    Login:
+      type: object
+      properties:
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+          writeOnly: true
+      required:
+      - email
+      - password
     PatchedBasicUserInformation:
       type: object
       properties:
@@ -429,6 +736,28 @@ components:
       properties:
         specialization:
           type: string
+    Patient:
+      type: object
+      properties:
+        patient_id:
+          type: integer
+          readOnly: true
+        name:
+          type: string
+          readOnly: true
+        phone:
+          type: string
+          nullable: true
+        gender:
+          type: string
+          default: other
+        age:
+          type: string
+          readOnly: true
+      required:
+      - age
+      - name
+      - patient_id
     RegistrationNumber:
       type: object
       properties:
@@ -448,11 +777,25 @@ components:
       properties:
         specialization:
           type: string
+    StatusEnum:
+      enum:
+      - pending
+      - confirmed
+      - completed
+      - cancelled
+      - no_show
+      type: string
+      description: |-
+        * `pending` - Pending
+        * `confirmed` - Confirmed
+        * `completed` - Completed
+        * `cancelled` - Cancelled
+        * `no_show` - No Show
   securitySchemes:
-    basicAuth:
-      type: http
-      scheme: basic
     cookieAuth:
       type: apiKey
       in: cookie
       name: sessionid
+    tokenAuth:
+      type: http
+      scheme: bearer
