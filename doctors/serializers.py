@@ -22,7 +22,6 @@ class RegistrationNumberSerializer(serializers.ModelSerializer):
         fields = ["id", "registration_number"]
 
 
-class SpecializationSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ["id", "specialization"]
+class SpecializationSerializer(serializers.Serializer):
+    specialization = serializers.CharField(required=False, allow_blank=True)
+

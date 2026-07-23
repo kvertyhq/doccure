@@ -19,6 +19,12 @@ from accounts.views.admin_views import (
     RevenueReportView,
 )
 
+from drf_spectacular.views import (
+    SpectacularAPIView,
+    SpectacularSwaggerView,
+    SpectacularRedocView,
+)
+
 admin.site.site_header = "Doccure Admin"
 admin.site.site_title = "Doccure Admin Portal"
 admin.site.index_title = "Welcome to Doccure Admin Portal"
@@ -34,6 +40,9 @@ urlpatterns = (
         path("", include("core.urls")),
         path("__debug__/", include(debug_toolbar.urls)),
         path("ckeditor/", include("ckeditor_uploader.urls")),
+        path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
+        path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
+        path('api/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
         path(
             "admin/",
             include(

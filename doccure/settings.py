@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     "patients",
     "bookings",
     "ckeditor",
+    "drf_spectacular"
 ]
 
 MIDDLEWARE = [
@@ -131,4 +132,15 @@ CKEDITOR_CONFIGS = {
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 DEBUG_TOOLBAR_CONFIG = {
     "IS_RUNNING_TESTS": False,
+}
+
+REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Doccure API",
+    "DESCRIPTION": "API documentation for the Doccure healthcare platform.",
+    "VERSION": "1.0.0",
+    "SERVE_INCLUDE_SCHEMA": False,
 }
