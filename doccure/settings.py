@@ -16,8 +16,34 @@ if env_file.exists():
 SECRET_KEY = os.environ.get("SECRET_KEY", "g!y0otek@9t^b+b*7)&q2a5^=8_9&xcdii8@6h^_*wphl-(fu9")
 DEBUG = os.environ.get("DEBUG", "True") == "True"
 
-allowed_hosts_str = os.environ.get("ALLOWED_HOSTS", "*")
-ALLOWED_HOSTS = [host.strip() for host in allowed_hosts_str.split(",") if host.strip()]
+allowed_hosts_str = os.environ.get("ALLOWED_HOSTS", "localhost,127.0.0.1,doccure.kverty.com")
+raw_hosts = [host.strip() for host in allowed_hosts_str.split(",") if host.strip()]
+ALLOWED_HOSTS = []
+for host in raw_hosts:
+    if host == "*":
+        ALLOWED_HOSTS.append("*")
+        continue
+    if host.startswith(("http://", "https://")):
+        host = host.split("//", 1)[1].split("/", 1)[0]
+    ALLOWED_HOSTS.append(host)
+
+for host in ["doccure.kverty.com", "www.doccure.kverty.com", "localhost", "127.0.0.1", "testserver"]:
+    if host not in ALLOWED_HOSTS and host != "*":
+        ALLOWED_HOSTS.append(host)
+
+trusted_origins_str = os.environ.get("CSRF_TRUSTED_ORIGINS", "")
+if trusted_origins_str:
+    CSRF_TRUSTED_ORIGINS = [origin.strip() for origin in trusted_origins_str.split(",") if origin.strip()]
+else:
+    CSRF_TRUSTED_ORIGINS = []
+    for host in ALLOWED_HOSTS:
+        if host.startswith("http://") or host.startswith("https://"):
+            CSRF_TRUSTED_ORIGINS.append(host)
+        elif host != "*":
+            CSRF_TRUSTED_ORIGINS.append(f"https://{host}")
+
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+USE_X_FORWARDED_HOST = True
 
 INSTALLED_APPS = [
     "django.contrib.admin",
