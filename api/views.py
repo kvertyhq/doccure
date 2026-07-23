@@ -22,6 +22,7 @@ from api.utils import get_available_slots_for_date, get_next_available_slot
 
 class LoginAPIView(APIView):
     permission_classes = [AllowAny]
+    serializer_class = LoginSerializer
 
     def post(self, request):
         serializer = LoginSerializer(data=request.data)
@@ -38,6 +39,7 @@ class LoginAPIView(APIView):
 
 class CustomerLookupAPIView(APIView):
     permission_classes = [IsAuthenticated]
+    serializer_class = PatientSerializer
 
     def get(self, request):
         phone = request.query_params.get('phone')
@@ -78,6 +80,7 @@ class CustomerLookupAPIView(APIView):
 
 class PatientRegisterAPIView(APIView):
     permission_classes = [IsAuthenticated]
+    serializer_class = PatientSerializer
 
     def post(self, request):
         name = request.data.get('name')
@@ -159,6 +162,7 @@ class PatientRegisterAPIView(APIView):
 
 class BookAppointmentAPIView(APIView):
     permission_classes = [IsAuthenticated]
+    serializer_class = BookingResponseSerializer
 
     def post(self, request):
         doctor_id = request.data.get('doctor_id')
@@ -276,6 +280,7 @@ class BookAppointmentAPIView(APIView):
 
 class DepartmentListAPIView(APIView):
     permission_classes = [IsAuthenticated]
+    serializer_class = DepartmentSerializer
 
     def get(self, request):
         specialties = Specialty.objects.all()
@@ -290,6 +295,7 @@ class DepartmentListAPIView(APIView):
 
 class DoctorListAPIView(APIView):
     permission_classes = [IsAuthenticated]
+    serializer_class = DoctorSerializer
 
     def get(self, request):
         dept_name = request.query_params.get('department')
@@ -309,6 +315,7 @@ class DoctorListAPIView(APIView):
 
 class DoctorScheduleAPIView(APIView):
     permission_classes = [IsAuthenticated]
+    serializer_class = DoctorSerializer # fallback for documentation
 
     def get(self, request):
         name = request.query_params.get('name')
@@ -340,7 +347,6 @@ class DoctorScheduleAPIView(APIView):
                 "message": "Doctor not found."
             }, status=status.HTTP_404_NOT_FOUND)
 
-        # Generate schedule for N days
         schedule = {}
         today = date.today()
         for i in range(days):
@@ -360,6 +366,7 @@ class DoctorScheduleAPIView(APIView):
 
 class MyAppointmentsAPIView(APIView):
     permission_classes = [IsAuthenticated]
+    serializer_class = AppointmentSerializer
 
     def get(self, request):
         phone = request.query_params.get('phone')
@@ -374,9 +381,8 @@ class MyAppointmentsAPIView(APIView):
 
         bookings = Booking.objects.select_related('doctor', 'doctor__profile')
 
-        # Clean check if query is digit/id vs phone
         clean_phone = ''.join(filter(str.isdigit, phone))
-        if phone.isdigit() and len(phone) < 6:  # Probably ID
+        if phone.isdigit() and len(phone) < 6:
             bookings = bookings.filter(patient_id=int(phone))
         else:
             if len(clean_phone) > 10:
@@ -397,6 +403,7 @@ class MyAppointmentsAPIView(APIView):
 
 class RescheduleAppointmentAPIView(APIView):
     permission_classes = [IsAuthenticated]
+    serializer_class = BookingResponseSerializer
 
     def post(self, request):
         appointment_id = request.data.get('appointment_id')
@@ -446,7 +453,6 @@ class RescheduleAppointmentAPIView(APIView):
                 "message": "Doctor is not available at the requested time slot."
             }, status=status.HTTP_400_BAD_REQUEST)
 
-        # Exclude self when checking existing bookings
         is_booked = doctor.appointments.filter(
             appointment_date=appointment_date,
             appointment_time=appointment_time,
@@ -477,6 +483,7 @@ class RescheduleAppointmentAPIView(APIView):
 
 class CancelAppointmentAPIView(APIView):
     permission_classes = [IsAuthenticated]
+    serializer_class = BookingResponseSerializer # fallback for documentation
 
     def post(self, request):
         appointment_id = request.data.get('appointment_id')
