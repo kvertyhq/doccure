@@ -225,3 +225,6 @@ venv/
 
 # Static files
 staticfiles/
+
+#sqlitedb
+db.sqlite3
