@@ -1,6 +1,7 @@
 from datetime import date, datetime
 from rest_framework import serializers
 from django.contrib.auth import authenticate
+from django.db.models import Q
 from accounts.models import User, Profile
 from bookings.models import Booking
 from api.utils import get_next_available_slot
@@ -104,11 +105,31 @@ class DepartmentSerializer(serializers.Serializer):
     doctors = serializers.SerializerMethodField()
 
     def get_doctor_count(self, obj):
-        return obj.doctors.filter(is_active=True).count()
+        return self.get_doctors_queryset(obj).count()
 
     def get_doctors(self, obj):
-        doctors = obj.doctors.filter(is_active=True)
+        doctors = self.get_doctors_queryset(obj)
         return DoctorSerializer(doctors, many=True).data
+
+    def get_doctors_queryset(self, obj):
+        name = obj.name.lower()
+        if 'neuro' in name:
+            query = Q(profile__specialization__icontains='neuro')
+        elif 'ortho' in name:
+            query = Q(profile__specialization__icontains='ortho')
+        elif 'cardio' in name:
+            query = Q(profile__specialization__icontains='cardio')
+        elif 'dent' in name:
+            query = Q(profile__specialization__icontains='dent')
+        elif 'uro' in name:
+            query = Q(profile__specialization__icontains='uro') & ~Q(profile__specialization__icontains='neuro')
+        else:
+            query = Q(profile__specialization__icontains=name)
+
+        return User.objects.filter(
+            role=User.RoleChoices.DOCTOR,
+            is_active=True
+        ).filter(query)
 
 
 class AppointmentSerializer(serializers.ModelSerializer):
