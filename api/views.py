@@ -8,7 +8,7 @@ from django.db import IntegrityError
 from django.db.models import Q
 from django.shortcuts import get_object_or_404
 from accounts.models import User, Profile
-from doctors.models import Specialty
+from core.models import Speciality
 from bookings.models import Booking
 from api.serializers import (
     LoginSerializer,
@@ -283,7 +283,7 @@ class DepartmentListAPIView(APIView):
     serializer_class = DepartmentSerializer
 
     def get(self, request):
-        specialties = Specialty.objects.all()
+        specialties = Speciality.objects.filter(is_active=True)
         serializer = DepartmentSerializer(specialties, many=True)
         return Response({
             "success": True,
