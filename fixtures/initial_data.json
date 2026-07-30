@@ -80,14 +80,34 @@
     }
   },
   {
+    "model": "doctors.timerange",
+    "pk": 1,
+    "fields": {
+      "start": "09:00:00",
+      "end": "12:00:00",
+      "is_active": true,
+      "slots_per_hour": 4
+    }
+  },
+  {
+    "model": "doctors.timerange",
+    "pk": 2,
+    "fields": {
+      "start": "14:00:00",
+      "end": "17:00:00",
+      "is_active": true,
+      "slots_per_hour": 4
+    }
+  },
+  {
     "model": "accounts.user",
     "pk": 1,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor1",
-      "email": "sajid.hossain@example.com",
-      "first_name": "Sajid",
-      "last_name": "Hossain",
+      "email": "abdul.rahman@example.com",
+      "first_name": "Abdul",
+      "last_name": "Rahman",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -99,28 +119,105 @@
     "fields": {
       "user": 1,
       "phone": "+8801750000001",
-      "dob": "1987-08-21",
-      "about": "MBBS from Sylhet Medical College. 14 years of experience in Urologist.",
+      "dob": "1962-04-08",
+      "about": "MBBS from Rajshahi Medical College. 5 years of experience in Urologist.",
       "specialization": "Urologist",
       "gender": "male",
-      "address": "House 32, Road 6, Block C, Mohammadpur",
-      "city": "Barisal",
-      "state": "Barisal",
-      "postal_code": "7441",
+      "address": "House 29, Road 3, Block A, Banani",
+      "city": "Dhaka",
+      "state": "Khulna",
+      "postal_code": "5012",
       "country": "Bangladesh",
-      "price_per_consultation": 626,
+      "price_per_consultation": 1649,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 2,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor2",
-      "email": "arjun.gupta@example.com",
-      "first_name": "Arjun",
-      "last_name": "Gupta",
+      "email": "karan.chatterjee@example.com",
+      "first_name": "Karan",
+      "last_name": "Chatterjee",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -132,28 +229,105 @@
     "fields": {
       "user": 2,
       "phone": "+919876000002",
-      "dob": "1968-11-27",
-      "about": "MBBS from King George's Medical University. 18 years of experience in Urologist.",
+      "dob": "1960-03-23",
+      "about": "MBBS from Christian Medical College. 18 years of experience in Urologist.",
       "specialization": "Urologist",
       "gender": "male",
-      "address": "Flat 31, C.G. Road, Mumbai",
-      "city": "Mumbai",
-      "state": "Tamil Nadu",
-      "postal_code": "643791",
+      "address": "Flat 29, Koregaon Park, Indore",
+      "city": "Indore",
+      "state": "Rajasthan",
+      "postal_code": "549898",
       "country": "India",
-      "price_per_consultation": 1206,
+      "price_per_consultation": 1196,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 3,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor3",
-      "email": "nasreen.siddiqua@example.com",
-      "first_name": "Nasreen",
-      "last_name": "Siddiqua",
+      "email": "nahida.hossain@example.com",
+      "first_name": "Nahida",
+      "last_name": "Hossain",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -165,28 +339,105 @@
     "fields": {
       "user": 3,
       "phone": "+8801750000003",
-      "dob": "1960-03-25",
-      "about": "MBBS from Rajshahi Medical College. 6 years of experience in Urologist.",
+      "dob": "1979-05-26",
+      "about": "MBBS from Sylhet Medical College. 6 years of experience in Urologist.",
       "specialization": "Urologist",
       "gender": "female",
-      "address": "House 91, Road 6, Block C, Khilgaon",
-      "city": "Barisal",
-      "state": "Barisal",
-      "postal_code": "5294",
+      "address": "House 14, Road 2, Block D, Banani",
+      "city": "Sylhet",
+      "state": "Rajshahi",
+      "postal_code": "6514",
       "country": "Bangladesh",
-      "price_per_consultation": 1482,
+      "price_per_consultation": 1994,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 4,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor4",
-      "email": "divya.verma@example.com",
-      "first_name": "Divya",
-      "last_name": "Verma",
+      "email": "asha.deshmukh@example.com",
+      "first_name": "Asha",
+      "last_name": "Deshmukh",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -198,28 +449,105 @@
     "fields": {
       "user": 4,
       "phone": "+919876000004",
-      "dob": "1983-08-11",
-      "about": "MBBS from King George's Medical University. 6 years of experience in Neurologist.",
+      "dob": "1979-06-19",
+      "about": "MBBS from Christian Medical College. 11 years of experience in Neurologist.",
       "specialization": "Neurologist",
       "gender": "female",
-      "address": "Flat 52, Andheri, Mumbai",
-      "city": "Mumbai",
-      "state": "Tamil Nadu",
-      "postal_code": "650430",
+      "address": "Flat 11, C.G. Road, Jaipur",
+      "city": "Jaipur",
+      "state": "Delhi",
+      "postal_code": "506922",
       "country": "India",
-      "price_per_consultation": 1169,
+      "price_per_consultation": 1942,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 4,
+    "fields": {
+      "user": 4,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 4,
+    "fields": {
+      "user": 4,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 4,
+    "fields": {
+      "user": 4,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 4,
+    "fields": {
+      "user": 4,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 4,
+    "fields": {
+      "user": 4,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 4,
+    "fields": {
+      "user": 4,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 4,
+    "fields": {
+      "user": 4,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 5,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor5",
-      "email": "sharif.rahman@example.com",
-      "first_name": "Sharif",
-      "last_name": "Rahman",
+      "email": "jamal.talukder@example.com",
+      "first_name": "Jamal",
+      "last_name": "Talukder",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -231,28 +559,105 @@
     "fields": {
       "user": 5,
       "phone": "+8801750000005",
-      "dob": "1964-08-20",
-      "about": "MBBS from Sylhet Medical College. 10 years of experience in Neurologist.",
+      "dob": "1980-06-06",
+      "about": "MBBS from Rajshahi Medical College. 16 years of experience in Neurologist.",
       "specialization": "Neurologist",
       "gender": "male",
-      "address": "House 98, Road 8, Block B, Mohammadpur",
-      "city": "Narayanganj",
-      "state": "Khulna",
-      "postal_code": "3656",
+      "address": "House 11, Road 14, Block B, Banani",
+      "city": "Dhaka",
+      "state": "Rajshahi",
+      "postal_code": "5741",
       "country": "Bangladesh",
-      "price_per_consultation": 1005,
+      "price_per_consultation": 1227,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 5,
+    "fields": {
+      "user": 5,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 5,
+    "fields": {
+      "user": 5,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 5,
+    "fields": {
+      "user": 5,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 5,
+    "fields": {
+      "user": 5,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 5,
+    "fields": {
+      "user": 5,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 5,
+    "fields": {
+      "user": 5,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 5,
+    "fields": {
+      "user": 5,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 6,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor6",
-      "email": "meera.sharma@example.com",
-      "first_name": "Meera",
-      "last_name": "Sharma",
+      "email": "arjun.joshi@example.com",
+      "first_name": "Arjun",
+      "last_name": "Joshi",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -264,28 +669,105 @@
     "fields": {
       "user": 6,
       "phone": "+919876000006",
-      "dob": "1967-04-04",
-      "about": "MBBS from All India Institute of Medical Sciences. 16 years of experience in Neurologist.",
+      "dob": "1972-05-21",
+      "about": "MBBS from King George's Medical University. 12 years of experience in Neurologist.",
       "specialization": "Neurologist",
-      "gender": "female",
-      "address": "Flat 2, Indiranagar, Indore",
-      "city": "Indore",
-      "state": "Karnataka",
-      "postal_code": "613155",
+      "gender": "male",
+      "address": "Flat 78, Connaught Place, Chandigarh",
+      "city": "Chandigarh",
+      "state": "Tamil Nadu",
+      "postal_code": "184870",
       "country": "India",
-      "price_per_consultation": 1327,
+      "price_per_consultation": 1902,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 6,
+    "fields": {
+      "user": 6,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 6,
+    "fields": {
+      "user": 6,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 6,
+    "fields": {
+      "user": 6,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 6,
+    "fields": {
+      "user": 6,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 6,
+    "fields": {
+      "user": 6,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 6,
+    "fields": {
+      "user": 6,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 6,
+    "fields": {
+      "user": 6,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 7,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor7",
-      "email": "mahmud.sheikh@example.com",
-      "first_name": "Mahmud",
-      "last_name": "Sheikh",
+      "email": "farzana.sultana@example.com",
+      "first_name": "Farzana",
+      "last_name": "Sultana",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -297,28 +779,105 @@
     "fields": {
       "user": 7,
       "phone": "+8801750000007",
-      "dob": "1970-10-07",
-      "about": "MBBS from Chittagong Medical College. 10 years of experience in Orthopedic Surgeon.",
+      "dob": "1988-12-11",
+      "about": "MBBS from Chittagong Medical College. 11 years of experience in Orthopedic Surgeon.",
       "specialization": "Orthopedic Surgeon",
-      "gender": "male",
-      "address": "House 96, Road 13, Block C, Uttara",
-      "city": "Gazipur",
-      "state": "Dhaka",
-      "postal_code": "2191",
+      "gender": "female",
+      "address": "House 41, Road 7, Block C, Banani",
+      "city": "Dhaka",
+      "state": "Rajshahi",
+      "postal_code": "1525",
       "country": "Bangladesh",
-      "price_per_consultation": 528,
+      "price_per_consultation": 1842,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 7,
+    "fields": {
+      "user": 7,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 7,
+    "fields": {
+      "user": 7,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 7,
+    "fields": {
+      "user": 7,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 7,
+    "fields": {
+      "user": 7,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 7,
+    "fields": {
+      "user": 7,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 7,
+    "fields": {
+      "user": 7,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 7,
+    "fields": {
+      "user": 7,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 8,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor8",
-      "email": "meera.das@example.com",
-      "first_name": "Meera",
-      "last_name": "Das",
+      "email": "kavita.nair@example.com",
+      "first_name": "Kavita",
+      "last_name": "Nair",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -330,28 +889,105 @@
     "fields": {
       "user": 8,
       "phone": "+919876000008",
-      "dob": "1984-03-10",
-      "about": "MBBS from Armed Forces Medical College. 9 years of experience in Orthopedic Surgeon.",
+      "dob": "1977-05-24",
+      "about": "MBBS from King George's Medical University. 18 years of experience in Orthopedic Surgeon.",
       "specialization": "Orthopedic Surgeon",
       "gender": "female",
-      "address": "Flat 89, Connaught Place, Indore",
-      "city": "Indore",
-      "state": "Maharashtra",
-      "postal_code": "589188",
+      "address": "Flat 34, Connaught Place, Pune",
+      "city": "Pune",
+      "state": "Gujarat",
+      "postal_code": "259811",
       "country": "India",
-      "price_per_consultation": 1224,
+      "price_per_consultation": 1695,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 8,
+    "fields": {
+      "user": 8,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 8,
+    "fields": {
+      "user": 8,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 8,
+    "fields": {
+      "user": 8,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 8,
+    "fields": {
+      "user": 8,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 8,
+    "fields": {
+      "user": 8,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 8,
+    "fields": {
+      "user": 8,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 8,
+    "fields": {
+      "user": 8,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 9,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor9",
-      "email": "kamal.islam@example.com",
-      "first_name": "Kamal",
-      "last_name": "Islam",
+      "email": "nusrat.siddiqua@example.com",
+      "first_name": "Nusrat",
+      "last_name": "Siddiqua",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -363,28 +999,105 @@
     "fields": {
       "user": 9,
       "phone": "+8801750000009",
-      "dob": "1983-03-22",
-      "about": "MBBS from Rajshahi Medical College. 19 years of experience in Orthopedic Surgeon.",
+      "dob": "1965-11-14",
+      "about": "MBBS from Dhaka Medical College. 7 years of experience in Orthopedic Surgeon.",
       "specialization": "Orthopedic Surgeon",
-      "gender": "male",
-      "address": "House 11, Road 5, Block A, Khilgaon",
-      "city": "Rajshahi",
+      "gender": "female",
+      "address": "House 66, Road 8, Block A, Gulshan",
+      "city": "Barisal",
       "state": "Rajshahi",
-      "postal_code": "9739",
+      "postal_code": "3266",
       "country": "Bangladesh",
-      "price_per_consultation": 615,
+      "price_per_consultation": 1288,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 9,
+    "fields": {
+      "user": 9,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 9,
+    "fields": {
+      "user": 9,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 9,
+    "fields": {
+      "user": 9,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 9,
+    "fields": {
+      "user": 9,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 9,
+    "fields": {
+      "user": 9,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 9,
+    "fields": {
+      "user": 9,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 9,
+    "fields": {
+      "user": 9,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 10,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor10",
-      "email": "vikram.gupta@example.com",
-      "first_name": "Vikram",
-      "last_name": "Gupta",
+      "email": "divya.chawla@example.com",
+      "first_name": "Divya",
+      "last_name": "Chawla",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -396,28 +1109,105 @@
     "fields": {
       "user": 10,
       "phone": "+919876000010",
-      "dob": "1975-01-13",
-      "about": "MBBS from Armed Forces Medical College. 8 years of experience in Cardiologist.",
+      "dob": "1963-11-18",
+      "about": "MBBS from All India Institute of Medical Sciences. 13 years of experience in Cardiologist.",
       "specialization": "Cardiologist",
-      "gender": "male",
-      "address": "Flat 27, Koregaon Park, Chandigarh",
-      "city": "Chandigarh",
-      "state": "Uttar Pradesh",
-      "postal_code": "503179",
+      "gender": "female",
+      "address": "Flat 33, C.G. Road, Lucknow",
+      "city": "Lucknow",
+      "state": "Gujarat",
+      "postal_code": "664816",
       "country": "India",
-      "price_per_consultation": 1962,
+      "price_per_consultation": 1812,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 10,
+    "fields": {
+      "user": 10,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 10,
+    "fields": {
+      "user": 10,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 10,
+    "fields": {
+      "user": 10,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 10,
+    "fields": {
+      "user": 10,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 10,
+    "fields": {
+      "user": 10,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 10,
+    "fields": {
+      "user": 10,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 10,
+    "fields": {
+      "user": 10,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 11,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor11",
-      "email": "jamal.miah@example.com",
-      "first_name": "Jamal",
-      "last_name": "Miah",
+      "email": "amina.akhter@example.com",
+      "first_name": "Amina",
+      "last_name": "Akhter",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -429,28 +1219,105 @@
     "fields": {
       "user": 11,
       "phone": "+8801750000011",
-      "dob": "1964-09-28",
-      "about": "MBBS from Rajshahi Medical College. 7 years of experience in Cardiologist.",
+      "dob": "1963-11-10",
+      "about": "MBBS from Chittagong Medical College. 11 years of experience in Cardiologist.",
       "specialization": "Cardiologist",
-      "gender": "male",
-      "address": "House 74, Road 15, Block A, Banani",
-      "city": "Barisal",
-      "state": "Chittagong",
-      "postal_code": "6152",
+      "gender": "female",
+      "address": "House 21, Road 8, Block A, Mirpur",
+      "city": "Chittagong",
+      "state": "Khulna",
+      "postal_code": "8123",
       "country": "Bangladesh",
-      "price_per_consultation": 1596,
+      "price_per_consultation": 813,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 11,
+    "fields": {
+      "user": 11,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 11,
+    "fields": {
+      "user": 11,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 11,
+    "fields": {
+      "user": 11,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 11,
+    "fields": {
+      "user": 11,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 11,
+    "fields": {
+      "user": 11,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 11,
+    "fields": {
+      "user": 11,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 11,
+    "fields": {
+      "user": 11,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 12,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor12",
-      "email": "rahul.reddy@example.com",
-      "first_name": "Rahul",
-      "last_name": "Reddy",
+      "email": "shweta.sharma@example.com",
+      "first_name": "Shweta",
+      "last_name": "Sharma",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -462,28 +1329,105 @@
     "fields": {
       "user": 12,
       "phone": "+919876000012",
-      "dob": "1972-08-03",
-      "about": "MBBS from Christian Medical College. 8 years of experience in Cardiologist.",
+      "dob": "1963-06-27",
+      "about": "MBBS from Christian Medical College. 14 years of experience in Cardiologist.",
       "specialization": "Cardiologist",
-      "gender": "male",
-      "address": "Flat 26, Salt Lake, Delhi",
-      "city": "Delhi",
-      "state": "Karnataka",
-      "postal_code": "236444",
+      "gender": "female",
+      "address": "Flat 1, Malviya Nagar, Bangalore",
+      "city": "Bangalore",
+      "state": "Rajasthan",
+      "postal_code": "666116",
       "country": "India",
-      "price_per_consultation": 821,
+      "price_per_consultation": 990,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 12,
+    "fields": {
+      "user": 12,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 12,
+    "fields": {
+      "user": 12,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 12,
+    "fields": {
+      "user": 12,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 12,
+    "fields": {
+      "user": 12,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 12,
+    "fields": {
+      "user": 12,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 12,
+    "fields": {
+      "user": 12,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 12,
+    "fields": {
+      "user": 12,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 13,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor13",
-      "email": "nasir.khan@example.com",
-      "first_name": "Nasir",
-      "last_name": "Khan",
+      "email": "mehedi.talukder@example.com",
+      "first_name": "Mehedi",
+      "last_name": "Talukder",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -495,28 +1439,105 @@
     "fields": {
       "user": 13,
       "phone": "+8801750000013",
-      "dob": "1967-03-04",
-      "about": "MBBS from Rajshahi Medical College. 11 years of experience in Dentist.",
+      "dob": "1990-09-06",
+      "about": "MBBS from Chittagong Medical College. 13 years of experience in Dentist.",
       "specialization": "Dentist",
       "gender": "male",
-      "address": "House 15, Road 10, Block C, Mohammadpur",
-      "city": "Dhaka",
+      "address": "House 94, Road 8, Block A, Dhanmondi",
+      "city": "Rajshahi",
       "state": "Chittagong",
-      "postal_code": "7172",
+      "postal_code": "2403",
       "country": "Bangladesh",
-      "price_per_consultation": 1315,
+      "price_per_consultation": 1580,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 13,
+    "fields": {
+      "user": 13,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 13,
+    "fields": {
+      "user": 13,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 13,
+    "fields": {
+      "user": 13,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 13,
+    "fields": {
+      "user": 13,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 13,
+    "fields": {
+      "user": 13,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 13,
+    "fields": {
+      "user": 13,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 13,
+    "fields": {
+      "user": 13,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 14,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor14",
-      "email": "dev.chatterjee@example.com",
-      "first_name": "Dev",
-      "last_name": "Chatterjee",
+      "email": "divya.deshmukh@example.com",
+      "first_name": "Divya",
+      "last_name": "Deshmukh",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -528,28 +1549,105 @@
     "fields": {
       "user": 14,
       "phone": "+919876000014",
-      "dob": "1984-02-25",
-      "about": "MBBS from King George's Medical University. 14 years of experience in Dentist.",
+      "dob": "1971-08-17",
+      "about": "MBBS from Armed Forces Medical College. 19 years of experience in Dentist.",
       "specialization": "Dentist",
-      "gender": "male",
-      "address": "Flat 69, Bandra, Chennai",
-      "city": "Chennai",
-      "state": "Telangana",
-      "postal_code": "640702",
+      "gender": "female",
+      "address": "Flat 92, Jubilee Hills, Hyderabad",
+      "city": "Hyderabad",
+      "state": "Rajasthan",
+      "postal_code": "320922",
       "country": "India",
-      "price_per_consultation": 1280,
+      "price_per_consultation": 747,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 14,
+    "fields": {
+      "user": 14,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 14,
+    "fields": {
+      "user": 14,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 14,
+    "fields": {
+      "user": 14,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 14,
+    "fields": {
+      "user": 14,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 14,
+    "fields": {
+      "user": 14,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 14,
+    "fields": {
+      "user": 14,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 14,
+    "fields": {
+      "user": 14,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 15,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor15",
-      "email": "kamal.islam@example.com",
-      "first_name": "Kamal",
-      "last_name": "Islam",
+      "email": "mohammad.miah@example.com",
+      "first_name": "Mohammad",
+      "last_name": "Miah",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -561,28 +1659,105 @@
     "fields": {
       "user": 15,
       "phone": "+8801750000015",
-      "dob": "1974-10-14",
-      "about": "MBBS from Chittagong Medical College. 17 years of experience in Dentist.",
+      "dob": "1980-01-08",
+      "about": "MBBS from Dhaka Medical College. 7 years of experience in Dentist.",
       "specialization": "Dentist",
       "gender": "male",
-      "address": "House 58, Road 6, Block C, Dhanmondi",
-      "city": "Gazipur",
-      "state": "Rangpur",
-      "postal_code": "6141",
+      "address": "House 3, Road 10, Block B, Uttara",
+      "city": "Rajshahi",
+      "state": "Chittagong",
+      "postal_code": "6539",
       "country": "Bangladesh",
-      "price_per_consultation": 1731,
+      "price_per_consultation": 564,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 15,
+    "fields": {
+      "user": 15,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 15,
+    "fields": {
+      "user": 15,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 15,
+    "fields": {
+      "user": 15,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 15,
+    "fields": {
+      "user": 15,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 15,
+    "fields": {
+      "user": 15,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 15,
+    "fields": {
+      "user": 15,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 15,
+    "fields": {
+      "user": 15,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 35,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor16",
-      "email": "vikram.trivedi@example.com",
-      "first_name": "Vikram",
-      "last_name": "Trivedi",
+      "email": "ritu.gupta@example.com",
+      "first_name": "Ritu",
+      "last_name": "Gupta",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -594,28 +1769,105 @@
     "fields": {
       "user": 35,
       "phone": "+919876000016",
-      "dob": "1961-05-19",
-      "about": "MBBS from All India Institute of Medical Sciences. 14 years of experience in Pediatrician.",
+      "dob": "1983-10-19",
+      "about": "MBBS from King George's Medical University. 20 years of experience in Pediatrician.",
       "specialization": "Pediatrician",
-      "gender": "male",
-      "address": "Flat 19, Connaught Place, Delhi",
+      "gender": "female",
+      "address": "Flat 36, Koregaon Park, Delhi",
       "city": "Delhi",
-      "state": "Gujarat",
-      "postal_code": "198760",
+      "state": "Rajasthan",
+      "postal_code": "359565",
       "country": "India",
-      "price_per_consultation": 1118,
+      "price_per_consultation": 997,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 16,
+    "fields": {
+      "user": 35,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 16,
+    "fields": {
+      "user": 35,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 16,
+    "fields": {
+      "user": 35,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 16,
+    "fields": {
+      "user": 35,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 16,
+    "fields": {
+      "user": 35,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 16,
+    "fields": {
+      "user": 35,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 16,
+    "fields": {
+      "user": 35,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 36,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor17",
-      "email": "taslima.akter@example.com",
-      "first_name": "Taslima",
-      "last_name": "Akter",
+      "email": "rahima.khan@example.com",
+      "first_name": "Rahima",
+      "last_name": "Khan",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -627,28 +1879,105 @@
     "fields": {
       "user": 36,
       "phone": "+8801750000017",
-      "dob": "1989-06-18",
-      "about": "MBBS from Sylhet Medical College. 12 years of experience in Pediatrician.",
+      "dob": "1987-12-02",
+      "about": "MBBS from Rajshahi Medical College. 8 years of experience in Pediatrician.",
       "specialization": "Pediatrician",
       "gender": "female",
-      "address": "House 69, Road 3, Block D, Mohammadpur",
-      "city": "Rajshahi",
-      "state": "Khulna",
-      "postal_code": "4183",
+      "address": "House 13, Road 11, Block D, Mohammadpur",
+      "city": "Rangpur",
+      "state": "Rajshahi",
+      "postal_code": "2545",
       "country": "Bangladesh",
-      "price_per_consultation": 986,
+      "price_per_consultation": 624,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 17,
+    "fields": {
+      "user": 36,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 17,
+    "fields": {
+      "user": 36,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 17,
+    "fields": {
+      "user": 36,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 17,
+    "fields": {
+      "user": 36,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 17,
+    "fields": {
+      "user": 36,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 17,
+    "fields": {
+      "user": 36,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 17,
+    "fields": {
+      "user": 36,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 37,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor18",
-      "email": "pooja.gupta@example.com",
-      "first_name": "Pooja",
-      "last_name": "Gupta",
+      "email": "ritu.reddy@example.com",
+      "first_name": "Ritu",
+      "last_name": "Reddy",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -660,28 +1989,105 @@
     "fields": {
       "user": 37,
       "phone": "+919876000018",
-      "dob": "1976-10-28",
-      "about": "MBBS from Armed Forces Medical College. 12 years of experience in Pediatrician.",
+      "dob": "1964-07-06",
+      "about": "MBBS from King George's Medical University. 13 years of experience in Pediatrician.",
       "specialization": "Pediatrician",
       "gender": "female",
-      "address": "Flat 82, Salt Lake, Chennai",
-      "city": "Chennai",
-      "state": "Gujarat",
-      "postal_code": "246779",
+      "address": "Flat 32, Indiranagar, Indore",
+      "city": "Indore",
+      "state": "West Bengal",
+      "postal_code": "224576",
       "country": "India",
-      "price_per_consultation": 1114,
+      "price_per_consultation": 1447,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 18,
+    "fields": {
+      "user": 37,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 18,
+    "fields": {
+      "user": 37,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 18,
+    "fields": {
+      "user": 37,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 18,
+    "fields": {
+      "user": 37,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 18,
+    "fields": {
+      "user": 37,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 18,
+    "fields": {
+      "user": 37,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 18,
+    "fields": {
+      "user": 37,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 38,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor19",
-      "email": "rahima.hossain@example.com",
-      "first_name": "Rahima",
-      "last_name": "Hossain",
+      "email": "ahmed.chowdhury@example.com",
+      "first_name": "Ahmed",
+      "last_name": "Chowdhury",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -693,28 +2099,105 @@
     "fields": {
       "user": 38,
       "phone": "+8801750000019",
-      "dob": "1967-07-25",
-      "about": "MBBS from Sylhet Medical College. 20 years of experience in Gynecologist.",
+      "dob": "1975-08-07",
+      "about": "MBBS from Chittagong Medical College. 17 years of experience in Gynecologist.",
       "specialization": "Gynecologist",
-      "gender": "female",
-      "address": "House 74, Road 9, Block A, Mirpur",
-      "city": "Narayanganj",
-      "state": "Chittagong",
-      "postal_code": "7597",
+      "gender": "male",
+      "address": "House 7, Road 11, Block A, Banani",
+      "city": "Chittagong",
+      "state": "Mymensingh",
+      "postal_code": "2604",
       "country": "Bangladesh",
-      "price_per_consultation": 759,
+      "price_per_consultation": 620,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 19,
+    "fields": {
+      "user": 38,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 19,
+    "fields": {
+      "user": 38,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 19,
+    "fields": {
+      "user": 38,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 19,
+    "fields": {
+      "user": 38,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 19,
+    "fields": {
+      "user": 38,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 19,
+    "fields": {
+      "user": 38,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 19,
+    "fields": {
+      "user": 38,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 39,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor20",
-      "email": "deepika.nair@example.com",
-      "first_name": "Deepika",
-      "last_name": "Nair",
+      "email": "vikram.trivedi@example.com",
+      "first_name": "Vikram",
+      "last_name": "Trivedi",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -726,28 +2209,105 @@
     "fields": {
       "user": 39,
       "phone": "+919876000020",
-      "dob": "1977-11-26",
-      "about": "MBBS from Armed Forces Medical College. 12 years of experience in Gynecologist.",
+      "dob": "1990-12-26",
+      "about": "MBBS from Christian Medical College. 20 years of experience in Gynecologist.",
       "specialization": "Gynecologist",
-      "gender": "female",
-      "address": "Flat 56, Salt Lake, Kolkata",
-      "city": "Kolkata",
-      "state": "Madhya Pradesh",
-      "postal_code": "300713",
+      "gender": "male",
+      "address": "Flat 34, Koregaon Park, Pune",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "postal_code": "519386",
       "country": "India",
-      "price_per_consultation": 1390,
+      "price_per_consultation": 817,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 20,
+    "fields": {
+      "user": 39,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 20,
+    "fields": {
+      "user": 39,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 20,
+    "fields": {
+      "user": 39,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 20,
+    "fields": {
+      "user": 39,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 20,
+    "fields": {
+      "user": 39,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 20,
+    "fields": {
+      "user": 39,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 20,
+    "fields": {
+      "user": 39,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 40,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor21",
-      "email": "jasmine.rahman@example.com",
-      "first_name": "Jasmine",
-      "last_name": "Rahman",
+      "email": "abdul.ali@example.com",
+      "first_name": "Abdul",
+      "last_name": "Ali",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -759,28 +2319,105 @@
     "fields": {
       "user": 40,
       "phone": "+8801750000021",
-      "dob": "1989-08-19",
-      "about": "MBBS from Sylhet Medical College. 19 years of experience in Gynecologist.",
+      "dob": "1975-09-28",
+      "about": "MBBS from Dhaka Medical College. 10 years of experience in Gynecologist.",
       "specialization": "Gynecologist",
-      "gender": "female",
-      "address": "House 2, Road 7, Block D, Gulshan",
-      "city": "Narayanganj",
-      "state": "Khulna",
-      "postal_code": "9103",
+      "gender": "male",
+      "address": "House 75, Road 12, Block A, Mohammadpur",
+      "city": "Khulna",
+      "state": "Rajshahi",
+      "postal_code": "1958",
       "country": "Bangladesh",
-      "price_per_consultation": 1455,
+      "price_per_consultation": 616,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 21,
+    "fields": {
+      "user": 40,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 21,
+    "fields": {
+      "user": 40,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 21,
+    "fields": {
+      "user": 40,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 21,
+    "fields": {
+      "user": 40,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 21,
+    "fields": {
+      "user": 40,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 21,
+    "fields": {
+      "user": 40,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 21,
+    "fields": {
+      "user": 40,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 41,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor22",
-      "email": "kavita.singh@example.com",
-      "first_name": "Kavita",
-      "last_name": "Singh",
+      "email": "rahul.reddy@example.com",
+      "first_name": "Rahul",
+      "last_name": "Reddy",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -792,28 +2429,105 @@
     "fields": {
       "user": 41,
       "phone": "+919876000022",
-      "dob": "1973-12-02",
-      "about": "MBBS from King George's Medical University. 17 years of experience in Dermatologist.",
+      "dob": "1978-04-19",
+      "about": "MBBS from Armed Forces Medical College. 6 years of experience in Dermatologist.",
       "specialization": "Dermatologist",
-      "gender": "female",
-      "address": "Flat 39, Jubilee Hills, Pune",
-      "city": "Pune",
-      "state": "Rajasthan",
-      "postal_code": "125982",
+      "gender": "male",
+      "address": "Flat 87, Indiranagar, Bangalore",
+      "city": "Bangalore",
+      "state": "Delhi",
+      "postal_code": "181262",
       "country": "India",
-      "price_per_consultation": 911,
+      "price_per_consultation": 1768,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 22,
+    "fields": {
+      "user": 41,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 22,
+    "fields": {
+      "user": 41,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 22,
+    "fields": {
+      "user": 41,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 22,
+    "fields": {
+      "user": 41,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 22,
+    "fields": {
+      "user": 41,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 22,
+    "fields": {
+      "user": 41,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 22,
+    "fields": {
+      "user": 41,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 42,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor23",
-      "email": "nasreen.akter@example.com",
-      "first_name": "Nasreen",
-      "last_name": "Akter",
+      "email": "mahmud.hossain@example.com",
+      "first_name": "Mahmud",
+      "last_name": "Hossain",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -825,28 +2539,105 @@
     "fields": {
       "user": 42,
       "phone": "+8801750000023",
-      "dob": "1990-12-20",
-      "about": "MBBS from Rajshahi Medical College. 7 years of experience in Dermatologist.",
+      "dob": "1981-11-10",
+      "about": "MBBS from Sylhet Medical College. 19 years of experience in Dermatologist.",
       "specialization": "Dermatologist",
-      "gender": "female",
-      "address": "House 1, Road 7, Block A, Mohammadpur",
-      "city": "Chittagong",
-      "state": "Khulna",
-      "postal_code": "5504",
+      "gender": "male",
+      "address": "House 27, Road 11, Block C, Uttara",
+      "city": "Rangpur",
+      "state": "Barisal",
+      "postal_code": "5272",
       "country": "Bangladesh",
-      "price_per_consultation": 1329,
+      "price_per_consultation": 1147,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 23,
+    "fields": {
+      "user": 42,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 23,
+    "fields": {
+      "user": 42,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 23,
+    "fields": {
+      "user": 42,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 23,
+    "fields": {
+      "user": 42,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 23,
+    "fields": {
+      "user": 42,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 23,
+    "fields": {
+      "user": 42,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 23,
+    "fields": {
+      "user": 42,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 43,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "doctor24",
-      "email": "dev.verma@example.com",
-      "first_name": "Dev",
-      "last_name": "Verma",
+      "email": "sunil.singh@example.com",
+      "first_name": "Sunil",
+      "last_name": "Singh",
       "role": "doctor",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -858,28 +2649,105 @@
     "fields": {
       "user": 43,
       "phone": "+919876000024",
-      "dob": "1989-01-23",
-      "about": "MBBS from All India Institute of Medical Sciences. 18 years of experience in Dermatologist.",
+      "dob": "1964-06-03",
+      "about": "MBBS from King George's Medical University. 12 years of experience in Dermatologist.",
       "specialization": "Dermatologist",
       "gender": "male",
-      "address": "Flat 92, C.G. Road, Kolkata",
-      "city": "Kolkata",
-      "state": "Madhya Pradesh",
-      "postal_code": "154147",
+      "address": "Flat 10, C.G. Road, Mumbai",
+      "city": "Mumbai",
+      "state": "Gujarat",
+      "postal_code": "214837",
       "country": "India",
-      "price_per_consultation": 664,
+      "price_per_consultation": 1256,
       "is_available": true
+    }
+  },
+  {
+    "model": "doctors.saturday",
+    "pk": 24,
+    "fields": {
+      "user": 43,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.sunday",
+    "pk": 24,
+    "fields": {
+      "user": 43,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.monday",
+    "pk": 24,
+    "fields": {
+      "user": 43,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.tuesday",
+    "pk": 24,
+    "fields": {
+      "user": 43,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.wednesday",
+    "pk": 24,
+    "fields": {
+      "user": 43,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.thursday",
+    "pk": 24,
+    "fields": {
+      "user": 43,
+      "time_range": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "doctors.friday",
+    "pk": 24,
+    "fields": {
+      "user": 43,
+      "time_range": [
+        1,
+        2
+      ]
     }
   },
   {
     "model": "accounts.user",
     "pk": 16,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "patient1",
-      "email": "sabina.khatun@example.com",
-      "first_name": "Sabina",
-      "last_name": "Khatun",
+      "email": "sultana.nahar@example.com",
+      "first_name": "Sultana",
+      "last_name": "Nahar",
       "role": "patient",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -891,15 +2759,15 @@
     "fields": {
       "user": 16,
       "phone": "+8801850000001",
-      "dob": "1994-06-19",
+      "dob": "1987-05-22",
       "gender": "female",
-      "address": "Flat 16A, House 2, Road 5, Khilgaon",
-      "city": "Dhaka",
-      "state": "Rangpur",
-      "postal_code": "8861",
+      "address": "Flat 10A, House 79, Road 13, Gulshan",
+      "city": "Sylhet",
+      "state": "Mymensingh",
+      "postal_code": "9900",
       "country": "Bangladesh",
-      "blood_group": "O-",
-      "allergies": "Drug Allergy",
+      "blood_group": "A-",
+      "allergies": "Dust Allergy",
       "medical_conditions": "Diabetes"
     }
   },
@@ -907,11 +2775,11 @@
     "model": "accounts.user",
     "pk": 17,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "patient2",
-      "email": "priya.singh@example.com",
-      "first_name": "Priya",
-      "last_name": "Singh",
+      "email": "rohan.kumar@example.com",
+      "first_name": "Rohan",
+      "last_name": "Kumar",
       "role": "patient",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -923,27 +2791,27 @@
     "fields": {
       "user": 17,
       "phone": "+919856000002",
-      "dob": "1992-02-18",
-      "gender": "female",
-      "address": "Flat 16, Salt Lake, Delhi",
+      "dob": "1992-06-07",
+      "gender": "male",
+      "address": "Flat 18, Jubilee Hills, Delhi",
       "city": "Delhi",
-      "state": "Uttar Pradesh",
-      "postal_code": "460395",
+      "state": "Rajasthan",
+      "postal_code": "272998",
       "country": "India",
-      "blood_group": "AB-",
-      "allergies": "Dust Allergy",
-      "medical_conditions": "None"
+      "blood_group": "O+",
+      "allergies": "Drug Allergy",
+      "medical_conditions": "Diabetes"
     }
   },
   {
     "model": "accounts.user",
     "pk": 18,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "patient3",
-      "email": "nahida.siddiqua@example.com",
-      "first_name": "Nahida",
-      "last_name": "Siddiqua",
+      "email": "mehedi.uddin@example.com",
+      "first_name": "Mehedi",
+      "last_name": "Uddin",
       "role": "patient",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -955,15 +2823,15 @@
     "fields": {
       "user": 18,
       "phone": "+8801850000003",
-      "dob": "1984-08-07",
-      "gender": "female",
-      "address": "Flat 20A, House 79, Road 2, Gulshan",
-      "city": "Narayanganj",
-      "state": "Sylhet",
-      "postal_code": "3471",
+      "dob": "1975-12-15",
+      "gender": "male",
+      "address": "Flat 2A, House 1, Road 6, Dhanmondi",
+      "city": "Chittagong",
+      "state": "Rangpur",
+      "postal_code": "5533",
       "country": "Bangladesh",
-      "blood_group": "A-",
-      "allergies": "Dust Allergy",
+      "blood_group": "AB+",
+      "allergies": "None",
       "medical_conditions": "None"
     }
   },
@@ -971,11 +2839,11 @@
     "model": "accounts.user",
     "pk": 19,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "patient4",
-      "email": "pooja.iyer@example.com",
-      "first_name": "Pooja",
-      "last_name": "Iyer",
+      "email": "rohan.rao@example.com",
+      "first_name": "Rohan",
+      "last_name": "Rao",
       "role": "patient",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -987,27 +2855,27 @@
     "fields": {
       "user": 19,
       "phone": "+919856000004",
-      "dob": "1984-02-26",
-      "gender": "female",
-      "address": "Flat 46, Bandra, Kolkata",
-      "city": "Kolkata",
-      "state": "Madhya Pradesh",
-      "postal_code": "284631",
+      "dob": "1974-07-05",
+      "gender": "male",
+      "address": "Flat 3, T. Nagar, Indore",
+      "city": "Indore",
+      "state": "Karnataka",
+      "postal_code": "682092",
       "country": "India",
-      "blood_group": "O+",
-      "allergies": "None",
-      "medical_conditions": "None"
+      "blood_group": "A+",
+      "allergies": "Food Allergy",
+      "medical_conditions": "Diabetes"
     }
   },
   {
     "model": "accounts.user",
     "pk": 20,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "patient5",
-      "email": "mohammad.rahman@example.com",
-      "first_name": "Mohammad",
-      "last_name": "Rahman",
+      "email": "hasan.miah@example.com",
+      "first_name": "Hasan",
+      "last_name": "Miah",
       "role": "patient",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -1019,27 +2887,27 @@
     "fields": {
       "user": 20,
       "phone": "+8801850000005",
-      "dob": "1981-03-07",
+      "dob": "1974-04-28",
       "gender": "male",
-      "address": "Flat 17A, House 92, Road 7, Badda",
+      "address": "Flat 4A, House 46, Road 13, Badda",
       "city": "Barisal",
-      "state": "Rangpur",
-      "postal_code": "4967",
+      "state": "Rajshahi",
+      "postal_code": "5088",
       "country": "Bangladesh",
-      "blood_group": "AB+",
-      "allergies": "Drug Allergy",
-      "medical_conditions": "High Blood Pressure"
+      "blood_group": "B+",
+      "allergies": "Dust Allergy",
+      "medical_conditions": "Asthma"
     }
   },
   {
     "model": "accounts.user",
     "pk": 21,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "patient6",
-      "email": "manish.chatterjee@example.com",
-      "first_name": "Manish",
-      "last_name": "Chatterjee",
+      "email": "vijay.gupta@example.com",
+      "first_name": "Vijay",
+      "last_name": "Gupta",
       "role": "patient",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -1051,27 +2919,27 @@
     "fields": {
       "user": 21,
       "phone": "+919856000006",
-      "dob": "1997-07-17",
+      "dob": "1995-12-04",
       "gender": "male",
-      "address": "Flat 46, T. Nagar, Hyderabad",
-      "city": "Hyderabad",
-      "state": "Tamil Nadu",
-      "postal_code": "471798",
+      "address": "Flat 43, Indiranagar, Bangalore",
+      "city": "Bangalore",
+      "state": "West Bengal",
+      "postal_code": "541712",
       "country": "India",
-      "blood_group": "B-",
-      "allergies": "Food Allergy",
-      "medical_conditions": "Diabetes"
+      "blood_group": "AB+",
+      "allergies": "None",
+      "medical_conditions": "Asthma"
     }
   },
   {
     "model": "accounts.user",
     "pk": 22,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "patient7",
-      "email": "nasir.chowdhury@example.com",
-      "first_name": "Nasir",
-      "last_name": "Chowdhury",
+      "email": "mehedi.ahmed@example.com",
+      "first_name": "Mehedi",
+      "last_name": "Ahmed",
       "role": "patient",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -1083,27 +2951,27 @@
     "fields": {
       "user": 22,
       "phone": "+8801850000007",
-      "dob": "1972-04-02",
+      "dob": "1982-06-09",
       "gender": "male",
-      "address": "Flat 1A, House 48, Road 1, Badda",
-      "city": "Mymensingh",
-      "state": "Sylhet",
-      "postal_code": "3562",
+      "address": "Flat 10A, House 30, Road 4, Gulshan",
+      "city": "Rajshahi",
+      "state": "Mymensingh",
+      "postal_code": "6728",
       "country": "Bangladesh",
-      "blood_group": "B+",
-      "allergies": "Drug Allergy",
-      "medical_conditions": "High Blood Pressure"
+      "blood_group": "A-",
+      "allergies": "Food Allergy",
+      "medical_conditions": "Diabetes"
     }
   },
   {
     "model": "accounts.user",
     "pk": 23,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "patient8",
-      "email": "ritu.joshi@example.com",
-      "first_name": "Ritu",
-      "last_name": "Joshi",
+      "email": "sangeeta.singh@example.com",
+      "first_name": "Sangeeta",
+      "last_name": "Singh",
       "role": "patient",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -1115,27 +2983,27 @@
     "fields": {
       "user": 23,
       "phone": "+919856000008",
-      "dob": "1972-07-11",
+      "dob": "1975-10-09",
       "gender": "female",
-      "address": "Flat 50, Bandra, Jaipur",
-      "city": "Jaipur",
+      "address": "Flat 2, Bandra, Chandigarh",
+      "city": "Chandigarh",
       "state": "Rajasthan",
-      "postal_code": "121761",
+      "postal_code": "457235",
       "country": "India",
-      "blood_group": "B+",
-      "allergies": "Drug Allergy",
-      "medical_conditions": "High Blood Pressure"
+      "blood_group": "A+",
+      "allergies": "None",
+      "medical_conditions": "Asthma"
     }
   },
   {
     "model": "accounts.user",
     "pk": 24,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "patient9",
-      "email": "fatima.parvin@example.com",
-      "first_name": "Fatima",
-      "last_name": "Parvin",
+      "email": "farzana.sultana@example.com",
+      "first_name": "Farzana",
+      "last_name": "Sultana",
       "role": "patient",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -1147,27 +3015,27 @@
     "fields": {
       "user": 24,
       "phone": "+8801850000009",
-      "dob": "1978-12-20",
+      "dob": "1976-05-02",
       "gender": "female",
-      "address": "Flat 20A, House 51, Road 13, Khilgaon",
-      "city": "Khulna",
+      "address": "Flat 20A, House 66, Road 2, Badda",
+      "city": "Gazipur",
       "state": "Barisal",
-      "postal_code": "2600",
+      "postal_code": "8149",
       "country": "Bangladesh",
-      "blood_group": "B+",
-      "allergies": "Drug Allergy",
-      "medical_conditions": "Diabetes"
+      "blood_group": "AB+",
+      "allergies": "None",
+      "medical_conditions": "High Blood Pressure"
     }
   },
   {
     "model": "accounts.user",
     "pk": 25,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "patient10",
-      "email": "suresh.mehta@example.com",
-      "first_name": "Suresh",
-      "last_name": "Mehta",
+      "email": "divya.das@example.com",
+      "first_name": "Divya",
+      "last_name": "Das",
       "role": "patient",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -1179,27 +3047,27 @@
     "fields": {
       "user": 25,
       "phone": "+919856000010",
-      "dob": "1995-09-06",
-      "gender": "male",
-      "address": "Flat 12, C.G. Road, Chandigarh",
-      "city": "Chandigarh",
-      "state": "Karnataka",
-      "postal_code": "489197",
+      "dob": "1973-12-10",
+      "gender": "female",
+      "address": "Flat 40, T. Nagar, Pune",
+      "city": "Pune",
+      "state": "Delhi",
+      "postal_code": "456239",
       "country": "India",
-      "blood_group": "B+",
+      "blood_group": "O+",
       "allergies": "Drug Allergy",
-      "medical_conditions": "Asthma"
+      "medical_conditions": "Diabetes"
     }
   },
   {
     "model": "accounts.user",
     "pk": 26,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "patient11",
-      "email": "fahim.sheikh@example.com",
-      "first_name": "Fahim",
-      "last_name": "Sheikh",
+      "email": "sultana.jahan@example.com",
+      "first_name": "Sultana",
+      "last_name": "Jahan",
       "role": "patient",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -1211,14 +3079,14 @@
     "fields": {
       "user": 26,
       "phone": "+8801850000011",
-      "dob": "1975-11-24",
-      "gender": "male",
-      "address": "Flat 15A, House 41, Road 14, Uttara",
-      "city": "Dhaka",
-      "state": "Chittagong",
-      "postal_code": "9880",
+      "dob": "1998-03-20",
+      "gender": "female",
+      "address": "Flat 7A, House 54, Road 11, Badda",
+      "city": "Gazipur",
+      "state": "Khulna",
+      "postal_code": "3085",
       "country": "Bangladesh",
-      "blood_group": "AB+",
+      "blood_group": "O+",
       "allergies": "Drug Allergy",
       "medical_conditions": "None"
     }
@@ -1227,11 +3095,11 @@
     "model": "accounts.user",
     "pk": 27,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "patient12",
-      "email": "aditya.nair@example.com",
-      "first_name": "Aditya",
-      "last_name": "Nair",
+      "email": "divya.patel@example.com",
+      "first_name": "Divya",
+      "last_name": "Patel",
       "role": "patient",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -1243,27 +3111,27 @@
     "fields": {
       "user": 27,
       "phone": "+919856000012",
-      "dob": "1978-05-08",
-      "gender": "male",
-      "address": "Flat 27, C.G. Road, Mumbai",
-      "city": "Mumbai",
-      "state": "Maharashtra",
-      "postal_code": "301855",
+      "dob": "1984-08-15",
+      "gender": "female",
+      "address": "Flat 38, Malviya Nagar, Chennai",
+      "city": "Chennai",
+      "state": "Telangana",
+      "postal_code": "560770",
       "country": "India",
-      "blood_group": "A+",
-      "allergies": "None",
-      "medical_conditions": "Diabetes"
+      "blood_group": "B-",
+      "allergies": "Drug Allergy",
+      "medical_conditions": "High Blood Pressure"
     }
   },
   {
     "model": "accounts.user",
     "pk": 28,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "patient13",
-      "email": "ahmed.ali@example.com",
-      "first_name": "Ahmed",
-      "last_name": "Ali",
+      "email": "nasir.ahmed@example.com",
+      "first_name": "Nasir",
+      "last_name": "Ahmed",
       "role": "patient",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -1275,15 +3143,15 @@
     "fields": {
       "user": 28,
       "phone": "+8801850000013",
-      "dob": "1987-07-21",
+      "dob": "1974-01-02",
       "gender": "male",
-      "address": "Flat 15A, House 49, Road 15, Banani",
-      "city": "Sylhet",
-      "state": "Sylhet",
-      "postal_code": "7169",
+      "address": "Flat 8A, House 87, Road 5, Uttara",
+      "city": "Khulna",
+      "state": "Barisal",
+      "postal_code": "2530",
       "country": "Bangladesh",
-      "blood_group": "AB-",
-      "allergies": "Dust Allergy",
+      "blood_group": "B-",
+      "allergies": "Drug Allergy",
       "medical_conditions": "None"
     }
   },
@@ -1291,11 +3159,11 @@
     "model": "accounts.user",
     "pk": 29,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "patient14",
-      "email": "divya.reddy@example.com",
-      "first_name": "Divya",
-      "last_name": "Reddy",
+      "email": "shweta.iyer@example.com",
+      "first_name": "Shweta",
+      "last_name": "Iyer",
       "role": "patient",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -1307,27 +3175,27 @@
     "fields": {
       "user": 29,
       "phone": "+919856000014",
-      "dob": "1994-06-18",
+      "dob": "1977-03-21",
       "gender": "female",
-      "address": "Flat 48, Bandra, Jaipur",
-      "city": "Jaipur",
-      "state": "Gujarat",
-      "postal_code": "485960",
+      "address": "Flat 46, Salt Lake, Pune",
+      "city": "Pune",
+      "state": "Madhya Pradesh",
+      "postal_code": "313880",
       "country": "India",
-      "blood_group": "O-",
-      "allergies": "Drug Allergy",
-      "medical_conditions": "None"
+      "blood_group": "A+",
+      "allergies": "None",
+      "medical_conditions": "Asthma"
     }
   },
   {
     "model": "accounts.user",
     "pk": 30,
     "fields": {
-      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
       "username": "patient15",
-      "email": "fahim.sarkar@example.com",
-      "first_name": "Fahim",
-      "last_name": "Sarkar",
+      "email": "sajid.hossain@example.com",
+      "first_name": "Sajid",
+      "last_name": "Hossain",
       "role": "patient",
       "is_active": true,
       "date_joined": "2023-01-01T00:00:00Z"
@@ -1339,16 +3207,16 @@
     "fields": {
       "user": 30,
       "phone": "+8801850000015",
-      "dob": "1993-07-09",
+      "dob": "1995-08-22",
       "gender": "male",
-      "address": "Flat 4A, House 48, Road 2, Mirpur",
-      "city": "Khulna",
-      "state": "Rajshahi",
-      "postal_code": "8584",
+      "address": "Flat 18A, House 32, Road 15, Banani",
+      "city": "Sylhet",
+      "state": "Mymensingh",
+      "postal_code": "1822",
       "country": "Bangladesh",
-      "blood_group": "A+",
+      "blood_group": "O-",
       "allergies": "Drug Allergy",
-      "medical_conditions": "Diabetes"
+      "medical_conditions": "Asthma"
     }
   }
 ]
