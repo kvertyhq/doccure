@@ -332,13 +332,30 @@ class DoctorScheduleAPIView(APIView):
         except ValueError:
             days = 7
 
-        clean_name = name.lower().replace("dr.", "").replace("dr", "").strip()
+        # Safely remove "Dr." or "Dr" prefix from the start of the name only
+        clean_name = name.strip()
+        if clean_name.lower().startswith("dr."):
+            clean_name = clean_name[3:].strip()
+        elif clean_name.lower().startswith("dr "):
+            clean_name = clean_name[3:].strip()
+        elif clean_name.lower() == "dr":
+            clean_name = ""
+
+        # Normalize spaces
+        clean_name = " ".join(clean_name.split())
+
+        from django.db.models.functions import Concat
+        from django.db.models import Value
 
         doctor = User.objects.filter(
             role=User.RoleChoices.DOCTOR,
             is_active=True
+        ).annotate(
+            full_name=Concat('first_name', Value(' '), 'last_name')
         ).filter(
-            Q(first_name__icontains=clean_name) | Q(last_name__icontains=clean_name)
+            Q(first_name__icontains=clean_name) | 
+            Q(last_name__icontains=clean_name) |
+            Q(full_name__icontains=clean_name)
         ).first()
 
         if not doctor:
