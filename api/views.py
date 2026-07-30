@@ -62,8 +62,8 @@ class CustomerLookupAPIView(APIView):
             if not profile:
                 return Response({
                     "success": False,
-                    "message": "Patient not found"
-                }, status=status.HTTP_404_NOT_FOUND)
+                    "message": "number was not found register him as a new patient"
+                }, status=status.HTTP_200_OK)
 
             user = profile.user
             serializer = PatientSerializer(user)
