@@ -96,7 +96,17 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "doccure.wsgi.application"
 
-if os.environ.get("DB_ENGINE"):
+import dj_database_url
+
+if os.environ.get("DATABASE_URL"):
+    DATABASES = {
+        "default": dj_database_url.config(
+            default=os.environ.get("DATABASE_URL"),
+            conn_max_age=600,
+            conn_health_checks=True,
+        )
+    }
+elif os.environ.get("DB_ENGINE"):
     DATABASES = {
         "default": {
             "ENGINE": os.environ.get("DB_ENGINE"),
@@ -114,6 +124,7 @@ else:
             "NAME": BASE_DIR / "db.sqlite3",
         }
     }
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {

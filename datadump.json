@@ -1,0 +1,5165 @@
+[
+{
+    "model": "sessions.session",
+    "pk": "2xb8bsgq2w4zsjpb9cuyole8ap37rjm9",
+    "fields": {
+        "session_data": ".eJxVjLEOwjAMRP8lM4pip21kRna-IYpjQwoolZp2Qvw7rdQBttO9d_c2Ma1LiWvTOY5izgbM6bfjlJ9adyCPVO-TzVNd5pHtrtiDNnudRF-Xw_07KKmVba0gjKhJXRBREi8kW06EyD3cRAGDy5yZIQ8YqOs7h8AkNHhG783nCxDkOEs:1tQtLA:E_VEKbMKmck2Etiks1JpHgpomA7wqnMJCGP9rRNb2xc",
+        "expire_date": "2025-01-09T19:16:12.184Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "bdof7fy44j10sqybhqn316nybk6xlci0",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSEtMxTHpft-A4FhkKqBpI-V8d-1SRe6veec-1I-bGvx2yKzn5K6KDDq9DvGwA-pO0n3UG9Nc6vrPEW9K_qgix5bkuf1cP8OSljKt8YBpOuNA2KibPPgJCMSZgNGXCdo-wjCbIUMi5w7cgCCaA0j2ZjU-wPtAzeT:1u7I8R:A7Gr1HqQO-7_OSpjoWUAbQ_7QVH5plEbMVsgWbx4ELY",
+        "expire_date": "2025-05-06T18:14:19.782Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "fbsohhy445d946phgmg5xn1rtv08bmbj",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pBSGKAu3XsGAjODVA0kpV0Z765NutDtf-_9lwhxW0vYOi9hJnEWyovT75giPrjuhO6x3prEVtdlTnJX5EG7vDbi5-Vw_w5K7OVbA9OUNAycKXqTMiebLA6eKING9COOrNg7o6K3gE5PZI1WANY5MDqL9wc3cThQ:1tRE5l:qDcsgUwId8dxWCs8i_0AeyymQAImdltEecptD6MNiyE",
+        "expire_date": "2025-01-10T17:25:41.622Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "itwrrdes6s6xueyhm54s78k9gn44r2gg",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAKHYa6dO8ZyMCAVA0kpV0Z765NutDtf-_9l_C0rcVvPS1-ZnEWRpx-t0DxkeoO-E711mRsdV3mIHdFHrTLa-P0vBzu30GhXr41GKNRQc5RRdQBFIHJHBgpoQtuwlERkWZE50BZHWNOaTB5hMk6Hqx4fwDjuDfc:1tPhco:5XBem4yL_TohRcHy5CarHMV1vEgSV0IxBLmS9kb9z70",
+        "expire_date": "2025-01-06T12:33:30.266Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "lvfesomb5zjkje0gbi9cebyflgqok9ac",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSEtMxTHpft-A4FhkKqBpI-V8d-1SRe6veec-1I-bGvx2yKzn5K6KDDq9DvGwA-pO0n3UG9Nc6vrPEW9K_qgix5bkuf1cP8OSljKt8YBpOuNA2KibPPgJCMSZgNGXCdo-wjCbIUMi5w7cgCCaA0j2ZjU-wPtAzeT:1txV51:xe3lzQ53ZeTBjSl0cHSwfVR9K5YBShiHL3jR_V2pPG4",
+        "expire_date": "2025-04-09T18:02:19.527Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "t22xv8pibm90yctrhucp3vzy36ed9cff",
+    "fields": {
+        "session_data": ".eJxVjDsOgzAQRO_iOrLwl3XK9JzB2mWXmCQCCUMV5e4BiSLRdPPezFtl3NaStypLHlldlVGX346wf8p0AH7gdJ91P0_rMpI-FH3SqruZ5XU73b-DgrXsa_Kts3vAo42OGsuRpQ3A1hv0Qo6ELKXBJDBNhJgCNB6GIGGIjgOozxe_Bzbu:1u4Nty:6mzSnxfJbTmDvoZYbSWMftVORcQOr0UhwNkFf_T73V4",
+        "expire_date": "2025-04-28T17:47:22.614Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "tchpwbs0m7q0mj4ta70e91i59am70upe",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pCBUWhduvcMhBkGqRpISrsy3l2bdKHb_977LxXiupSwdpnDlNRZoVGH35EiP6RuJN1jvTXNrS7zRHpT9E67vrYkz8vu_h2U2Mu3BsOSTEY23qFlipbFC_gjuzFnJIeEzsJJAIVhYMKYMvE4gCMDltT7AxyjOKA:1tPguC:X3btW5HOXVsqODHu7ar3h5R1xp_4gm1an6l1j1NwIQ8",
+        "expire_date": "2025-01-06T11:47:24.019Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "u7d6updqd85r2yjrab45emxccu6y4re5",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSEtMxTHpft-A4FhkKqBpI-V8d-1SRe6veec-1I-bGvx2yKzn5K6KDDq9DvGwA-pO0n3UG9Nc6vrPEW9K_qgix5bkuf1cP8OSljKt8YBpOuNA2KibPPgJCMSZgNGXCdo-wjCbIUMi5w7cgCCaA0j2ZjU-wPtAzeT:1tPR0u:oVZCbHuoznTOdjCL_blTUO3JYqp9yygQSxnPQxs3APw",
+        "expire_date": "2025-01-05T18:49:16.908Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "y1n2ngp6rkdacw92dbjy0wqxsoedmb6t",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hBwKKBL9z0DmWFAqgaS0q6Md7dNutDte-__twi4LiWsPc1hYnEVWpx-GWF8proLfmC9NxlbXeaJ5J7Iw3Y5Nk6v29H-HRTsZVuTYTtczsiGFYDKZJAG75z1TieXHXir_QYQdCaPZLOlCBhBoc2ctfh8AdjcOAg:1tPO42:Bi3P0ZG5AK9Bf5LHOhUz5u8dFkeXcS6rZMU4kguxU6U",
+        "expire_date": "2025-01-05T15:40:18.584Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yk2ststoz7myxqyt4t05pxzfaw38jtle",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hDA0mFcuu8ZyMCAVA0kpV0Z765NutDtf-_9l_C0rcVvPS1-ZnERWpx-t0DxkeoO-E711mRsdV3mIHdFHrTLqXF6Xg_376BQL986EFuVdDIuI6By2aFLGcCyC6wVjGg0AsUcwToLms9hHHAwQREbVEa8P-GeN2I:1tRFvJ:AeySJrEUJ0uyAHUf2AEUzq7mrbteXDUxbl-KFC0MLmg",
+        "expire_date": "2025-01-10T19:23:01.467Z"
+    }
+},
+{
+    "model": "core.speciality",
+    "pk": 1,
+    "fields": {
+        "name": "Urology",
+        "slug": "urology",
+        "description": "Urology department",
+        "image": "",
+        "is_active": true
+    }
+},
+{
+    "model": "core.speciality",
+    "pk": 2,
+    "fields": {
+        "name": "Neurology",
+        "slug": "neurology",
+        "description": "Neurology department",
+        "image": "",
+        "is_active": true
+    }
+},
+{
+    "model": "core.speciality",
+    "pk": 3,
+    "fields": {
+        "name": "Orthopedic",
+        "slug": "orthopedic",
+        "description": "Orthopedic department",
+        "image": "",
+        "is_active": true
+    }
+},
+{
+    "model": "core.speciality",
+    "pk": 4,
+    "fields": {
+        "name": "Cardiologist",
+        "slug": "cardiologist",
+        "description": "Cardiologist department",
+        "image": "",
+        "is_active": true
+    }
+},
+{
+    "model": "core.speciality",
+    "pk": 5,
+    "fields": {
+        "name": "Dentist",
+        "slug": "dentist",
+        "description": "Dentist department",
+        "image": "",
+        "is_active": true
+    }
+},
+{
+    "model": "core.speciality",
+    "pk": 6,
+    "fields": {
+        "name": "Pediatrician",
+        "slug": "pediatrician",
+        "description": "Pediatrician department",
+        "image": "",
+        "is_active": true
+    }
+},
+{
+    "model": "core.speciality",
+    "pk": 7,
+    "fields": {
+        "name": "Gynecologist",
+        "slug": "gynecologist",
+        "description": "Gynecologist department",
+        "image": "",
+        "is_active": true
+    }
+},
+{
+    "model": "core.speciality",
+    "pk": 8,
+    "fields": {
+        "name": "Dermatologist",
+        "slug": "dermatologist",
+        "description": "Dermatologist department",
+        "image": "",
+        "is_active": true
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor1",
+        "role": "doctor",
+        "email": "abdul.rahman@example.com",
+        "first_name": "Abdul",
+        "last_name": "Rahman",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor2",
+        "role": "doctor",
+        "email": "karan.chatterjee@example.com",
+        "first_name": "Karan",
+        "last_name": "Chatterjee",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor3",
+        "role": "doctor",
+        "email": "nahida.hossain@example.com",
+        "first_name": "Nahida",
+        "last_name": "Hossain",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor4",
+        "role": "doctor",
+        "email": "asha.deshmukh@example.com",
+        "first_name": "Asha",
+        "last_name": "Deshmukh",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor5",
+        "role": "doctor",
+        "email": "jamal.talukder@example.com",
+        "first_name": "Jamal",
+        "last_name": "Talukder",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor6",
+        "role": "doctor",
+        "email": "arjun.joshi@example.com",
+        "first_name": "Arjun",
+        "last_name": "Joshi",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor7",
+        "role": "doctor",
+        "email": "farzana.sultana@example.com",
+        "first_name": "Farzana",
+        "last_name": "Sultana",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor8",
+        "role": "doctor",
+        "email": "kavita.nair@example.com",
+        "first_name": "Kavita",
+        "last_name": "Nair",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor9",
+        "role": "doctor",
+        "email": "nusrat.siddiqua@example.com",
+        "first_name": "Nusrat",
+        "last_name": "Siddiqua",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor10",
+        "role": "doctor",
+        "email": "divya.chawla@example.com",
+        "first_name": "Divya",
+        "last_name": "Chawla",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor11",
+        "role": "doctor",
+        "email": "amina.akhter@example.com",
+        "first_name": "Amina",
+        "last_name": "Akhter",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor12",
+        "role": "doctor",
+        "email": "shweta.sharma@example.com",
+        "first_name": "Shweta",
+        "last_name": "Sharma",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor13",
+        "role": "doctor",
+        "email": "mehedi.talukder@example.com",
+        "first_name": "Mehedi",
+        "last_name": "Talukder",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor14",
+        "role": "doctor",
+        "email": "divya.deshmukh@example.com",
+        "first_name": "Divya",
+        "last_name": "Deshmukh",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor15",
+        "role": "doctor",
+        "email": "mohammad.miah@example.com",
+        "first_name": "Mohammad",
+        "last_name": "Miah",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "patient1",
+        "role": "patient",
+        "email": "sultana.nahar@example.com",
+        "first_name": "Sultana",
+        "last_name": "Nahar",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "patient2",
+        "role": "patient",
+        "email": "rohan.kumar@example.com",
+        "first_name": "Rohan",
+        "last_name": "Kumar",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "patient3",
+        "role": "patient",
+        "email": "mehedi.uddin@example.com",
+        "first_name": "Mehedi",
+        "last_name": "Uddin",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "patient4",
+        "role": "patient",
+        "email": "rohan.rao@example.com",
+        "first_name": "Rohan",
+        "last_name": "Rao",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "patient5",
+        "role": "patient",
+        "email": "hasan.miah@example.com",
+        "first_name": "Hasan",
+        "last_name": "Miah",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "patient6",
+        "role": "patient",
+        "email": "vijay.gupta@example.com",
+        "first_name": "Vijay",
+        "last_name": "Gupta",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "patient7",
+        "role": "patient",
+        "email": "mehedi.ahmed@example.com",
+        "first_name": "Mehedi",
+        "last_name": "Ahmed",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "patient8",
+        "role": "patient",
+        "email": "sangeeta.singh@example.com",
+        "first_name": "Sangeeta",
+        "last_name": "Singh",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "patient9",
+        "role": "patient",
+        "email": "farzana.sultana@example.com",
+        "first_name": "Farzana",
+        "last_name": "Sultana",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "patient10",
+        "role": "patient",
+        "email": "divya.das@example.com",
+        "first_name": "Divya",
+        "last_name": "Das",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "patient11",
+        "role": "patient",
+        "email": "sultana.jahan@example.com",
+        "first_name": "Sultana",
+        "last_name": "Jahan",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "patient12",
+        "role": "patient",
+        "email": "divya.patel@example.com",
+        "first_name": "Divya",
+        "last_name": "Patel",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "patient13",
+        "role": "patient",
+        "email": "nasir.ahmed@example.com",
+        "first_name": "Nasir",
+        "last_name": "Ahmed",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "patient14",
+        "role": "patient",
+        "email": "shweta.iyer@example.com",
+        "first_name": "Shweta",
+        "last_name": "Iyer",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "patient15",
+        "role": "patient",
+        "email": "sajid.hossain@example.com",
+        "first_name": "Sajid",
+        "last_name": "Hossain",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$iYH0N9lSKu9IwlHWprAiAI$PlAqRnglA6qLxWhFpcH6kXZDgj8l21TvPi4sqKswT54=",
+        "last_login": "2024-12-26T19:13:32.581Z",
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-22T15:31:24.963Z",
+        "username": "manjurulhoque",
+        "role": "patient",
+        "email": "",
+        "first_name": "Manjurul",
+        "last_name": "Hoque",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$mzoSEr2XXayk8P7Dtcl9WT$R/0Hgbz9DaF3C5/IqF+yBUf0oeaigY578dbOAnBokeg=",
+        "last_login": "2025-04-22T18:14:19.726Z",
+        "is_superuser": true,
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-12-22T15:39:23.191Z",
+        "username": "admin",
+        "role": "patient",
+        "email": "",
+        "first_name": "Admin Manjurul",
+        "last_name": "John",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$otR5nsReQ0LcREAQcnFowR$eSKlEx2Sq1hiqVStzJUSy5o8A+FH4YGyY+KXaefsMlg=",
+        "last_login": null,
+        "is_superuser": true,
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-07-29T14:30:14.433Z",
+        "username": "admin_api",
+        "role": "patient",
+        "email": "admin@doccure.com",
+        "first_name": "",
+        "last_name": "",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$s2yPwANMfpSm0wINGOAhFM$6N+oR7lONVU8i0dGFwU/1055+OtRpWUHJKytPw0WdCQ=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-07-29T14:32:07.260Z",
+        "username": "pat_1850000099",
+        "role": "patient",
+        "email": "",
+        "first_name": "New",
+        "last_name": "Test Patient",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor16",
+        "role": "doctor",
+        "email": "ritu.gupta@example.com",
+        "first_name": "Ritu",
+        "last_name": "Gupta",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor17",
+        "role": "doctor",
+        "email": "rahima.khan@example.com",
+        "first_name": "Rahima",
+        "last_name": "Khan",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor18",
+        "role": "doctor",
+        "email": "ritu.reddy@example.com",
+        "first_name": "Ritu",
+        "last_name": "Reddy",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor19",
+        "role": "doctor",
+        "email": "ahmed.chowdhury@example.com",
+        "first_name": "Ahmed",
+        "last_name": "Chowdhury",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor20",
+        "role": "doctor",
+        "email": "vikram.trivedi@example.com",
+        "first_name": "Vikram",
+        "last_name": "Trivedi",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor21",
+        "role": "doctor",
+        "email": "abdul.ali@example.com",
+        "first_name": "Abdul",
+        "last_name": "Ali",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor22",
+        "role": "doctor",
+        "email": "rahul.reddy@example.com",
+        "first_name": "Rahul",
+        "last_name": "Reddy",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor23",
+        "role": "doctor",
+        "email": "mahmud.hossain@example.com",
+        "first_name": "Mahmud",
+        "last_name": "Hossain",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$IHF1VtxSDbZcIAr0YsiGLJ$+qez0fhZFOIX5Be+7n4thX19eN2xCGS4b5o75lIXYJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T00:00:00Z",
+        "username": "doctor24",
+        "role": "doctor",
+        "email": "sunil.singh@example.com",
+        "first_name": "Sunil",
+        "last_name": "Singh",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$4wB0M60zl7PQvfj5ovP7aU$omfTLB8PUJrABx2AE4QYsBwqpM1+Nuznvh9ojWFpjVQ=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-08-03T08:52:27.631Z",
+        "username": "testuser_live",
+        "role": "patient",
+        "email": "testuser_live@example.com",
+        "first_name": "",
+        "last_name": "",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$SVMK5RZVCRvAxjc5jFcJ4t$qO8l/Tk/tm7UaeAsvQuVJO/LnEJj9dRr2N7s5VkY6+8=",
+        "last_login": null,
+        "is_superuser": false,
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-08-03T08:55:45.931Z",
+        "username": "user",
+        "role": "patient",
+        "email": "user@example.com",
+        "first_name": "",
+        "last_name": "",
+        "registration_number": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "doctor1"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801750000001",
+        "dob": "1962-04-08",
+        "about": "MBBS from Rajshahi Medical College. 5 years of experience in Urologist.",
+        "specialization": "Urologist",
+        "gender": "male",
+        "address": "House 29, Road 3, Block A, Banani",
+        "city": "Dhaka",
+        "state": "Khulna",
+        "postal_code": "5012",
+        "country": "Bangladesh",
+        "price_per_consultation": "1649.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "doctor2"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919876000002",
+        "dob": "1960-03-23",
+        "about": "MBBS from Christian Medical College. 18 years of experience in Urologist.",
+        "specialization": "Urologist",
+        "gender": "male",
+        "address": "Flat 29, Koregaon Park, Indore",
+        "city": "Indore",
+        "state": "Rajasthan",
+        "postal_code": "549898",
+        "country": "India",
+        "price_per_consultation": "1196.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "doctor3"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801750000003",
+        "dob": "1979-05-26",
+        "about": "MBBS from Sylhet Medical College. 6 years of experience in Urologist.",
+        "specialization": "Urologist",
+        "gender": "female",
+        "address": "House 14, Road 2, Block D, Banani",
+        "city": "Sylhet",
+        "state": "Rajshahi",
+        "postal_code": "6514",
+        "country": "Bangladesh",
+        "price_per_consultation": "1994.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "doctor4"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919876000004",
+        "dob": "1979-06-19",
+        "about": "MBBS from Christian Medical College. 11 years of experience in Neurologist.",
+        "specialization": "Neurologist",
+        "gender": "female",
+        "address": "Flat 11, C.G. Road, Jaipur",
+        "city": "Jaipur",
+        "state": "Delhi",
+        "postal_code": "506922",
+        "country": "India",
+        "price_per_consultation": "1942.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "doctor5"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801750000005",
+        "dob": "1980-06-06",
+        "about": "MBBS from Rajshahi Medical College. 16 years of experience in Neurologist.",
+        "specialization": "Neurologist",
+        "gender": "male",
+        "address": "House 11, Road 14, Block B, Banani",
+        "city": "Dhaka",
+        "state": "Rajshahi",
+        "postal_code": "5741",
+        "country": "Bangladesh",
+        "price_per_consultation": "1227.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 6,
+    "fields": {
+        "user": [
+            "doctor6"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919876000006",
+        "dob": "1972-05-21",
+        "about": "MBBS from King George's Medical University. 12 years of experience in Neurologist.",
+        "specialization": "Neurologist",
+        "gender": "male",
+        "address": "Flat 78, Connaught Place, Chandigarh",
+        "city": "Chandigarh",
+        "state": "Tamil Nadu",
+        "postal_code": "184870",
+        "country": "India",
+        "price_per_consultation": "1902.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 7,
+    "fields": {
+        "user": [
+            "doctor7"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801750000007",
+        "dob": "1988-12-11",
+        "about": "MBBS from Chittagong Medical College. 11 years of experience in Orthopedic Surgeon.",
+        "specialization": "Orthopedic Surgeon",
+        "gender": "female",
+        "address": "House 41, Road 7, Block C, Banani",
+        "city": "Dhaka",
+        "state": "Rajshahi",
+        "postal_code": "1525",
+        "country": "Bangladesh",
+        "price_per_consultation": "1842.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 8,
+    "fields": {
+        "user": [
+            "doctor8"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919876000008",
+        "dob": "1977-05-24",
+        "about": "MBBS from King George's Medical University. 18 years of experience in Orthopedic Surgeon.",
+        "specialization": "Orthopedic Surgeon",
+        "gender": "female",
+        "address": "Flat 34, Connaught Place, Pune",
+        "city": "Pune",
+        "state": "Gujarat",
+        "postal_code": "259811",
+        "country": "India",
+        "price_per_consultation": "1695.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 9,
+    "fields": {
+        "user": [
+            "doctor9"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801750000009",
+        "dob": "1965-11-14",
+        "about": "MBBS from Dhaka Medical College. 7 years of experience in Orthopedic Surgeon.",
+        "specialization": "Orthopedic Surgeon",
+        "gender": "female",
+        "address": "House 66, Road 8, Block A, Gulshan",
+        "city": "Barisal",
+        "state": "Rajshahi",
+        "postal_code": "3266",
+        "country": "Bangladesh",
+        "price_per_consultation": "1288.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 10,
+    "fields": {
+        "user": [
+            "doctor10"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919876000010",
+        "dob": "1963-11-18",
+        "about": "MBBS from All India Institute of Medical Sciences. 13 years of experience in Cardiologist.",
+        "specialization": "Cardiologist",
+        "gender": "female",
+        "address": "Flat 33, C.G. Road, Lucknow",
+        "city": "Lucknow",
+        "state": "Gujarat",
+        "postal_code": "664816",
+        "country": "India",
+        "price_per_consultation": "1812.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 11,
+    "fields": {
+        "user": [
+            "doctor11"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801750000011",
+        "dob": "1963-11-10",
+        "about": "MBBS from Chittagong Medical College. 11 years of experience in Cardiologist.",
+        "specialization": "Cardiologist",
+        "gender": "female",
+        "address": "House 21, Road 8, Block A, Mirpur",
+        "city": "Chittagong",
+        "state": "Khulna",
+        "postal_code": "8123",
+        "country": "Bangladesh",
+        "price_per_consultation": "813.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 12,
+    "fields": {
+        "user": [
+            "doctor12"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919876000012",
+        "dob": "1963-06-27",
+        "about": "MBBS from Christian Medical College. 14 years of experience in Cardiologist.",
+        "specialization": "Cardiologist",
+        "gender": "female",
+        "address": "Flat 1, Malviya Nagar, Bangalore",
+        "city": "Bangalore",
+        "state": "Rajasthan",
+        "postal_code": "666116",
+        "country": "India",
+        "price_per_consultation": "990.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 13,
+    "fields": {
+        "user": [
+            "doctor13"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801750000013",
+        "dob": "1990-09-06",
+        "about": "MBBS from Chittagong Medical College. 13 years of experience in Dentist.",
+        "specialization": "Dentist",
+        "gender": "male",
+        "address": "House 94, Road 8, Block A, Dhanmondi",
+        "city": "Rajshahi",
+        "state": "Chittagong",
+        "postal_code": "2403",
+        "country": "Bangladesh",
+        "price_per_consultation": "1580.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 14,
+    "fields": {
+        "user": [
+            "doctor14"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919876000014",
+        "dob": "1971-08-17",
+        "about": "MBBS from Armed Forces Medical College. 19 years of experience in Dentist.",
+        "specialization": "Dentist",
+        "gender": "female",
+        "address": "Flat 92, Jubilee Hills, Hyderabad",
+        "city": "Hyderabad",
+        "state": "Rajasthan",
+        "postal_code": "320922",
+        "country": "India",
+        "price_per_consultation": "747.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 15,
+    "fields": {
+        "user": [
+            "doctor15"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801750000015",
+        "dob": "1980-01-08",
+        "about": "MBBS from Dhaka Medical College. 7 years of experience in Dentist.",
+        "specialization": "Dentist",
+        "gender": "male",
+        "address": "House 3, Road 10, Block B, Uttara",
+        "city": "Rajshahi",
+        "state": "Chittagong",
+        "postal_code": "6539",
+        "country": "Bangladesh",
+        "price_per_consultation": "564.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 16,
+    "fields": {
+        "user": [
+            "patient1"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801850000001",
+        "dob": "1987-05-22",
+        "about": null,
+        "specialization": null,
+        "gender": "female",
+        "address": "Flat 10A, House 79, Road 13, Gulshan",
+        "city": "Sylhet",
+        "state": "Mymensingh",
+        "postal_code": "9900",
+        "country": "Bangladesh",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": "A-",
+        "allergies": "Dust Allergy",
+        "medical_conditions": "Diabetes"
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 17,
+    "fields": {
+        "user": [
+            "patient2"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919856000002",
+        "dob": "1992-06-07",
+        "about": null,
+        "specialization": null,
+        "gender": "male",
+        "address": "Flat 18, Jubilee Hills, Delhi",
+        "city": "Delhi",
+        "state": "Rajasthan",
+        "postal_code": "272998",
+        "country": "India",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": "O+",
+        "allergies": "Drug Allergy",
+        "medical_conditions": "Diabetes"
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 18,
+    "fields": {
+        "user": [
+            "patient3"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801850000003",
+        "dob": "1975-12-15",
+        "about": null,
+        "specialization": null,
+        "gender": "male",
+        "address": "Flat 2A, House 1, Road 6, Dhanmondi",
+        "city": "Chittagong",
+        "state": "Rangpur",
+        "postal_code": "5533",
+        "country": "Bangladesh",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": "AB+",
+        "allergies": "None",
+        "medical_conditions": "None"
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 19,
+    "fields": {
+        "user": [
+            "patient4"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919856000004",
+        "dob": "1974-07-05",
+        "about": null,
+        "specialization": null,
+        "gender": "male",
+        "address": "Flat 3, T. Nagar, Indore",
+        "city": "Indore",
+        "state": "Karnataka",
+        "postal_code": "682092",
+        "country": "India",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": "A+",
+        "allergies": "Food Allergy",
+        "medical_conditions": "Diabetes"
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 20,
+    "fields": {
+        "user": [
+            "patient5"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801850000005",
+        "dob": "1974-04-28",
+        "about": null,
+        "specialization": null,
+        "gender": "male",
+        "address": "Flat 4A, House 46, Road 13, Badda",
+        "city": "Barisal",
+        "state": "Rajshahi",
+        "postal_code": "5088",
+        "country": "Bangladesh",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": "B+",
+        "allergies": "Dust Allergy",
+        "medical_conditions": "Asthma"
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 21,
+    "fields": {
+        "user": [
+            "patient6"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919856000006",
+        "dob": "1995-12-04",
+        "about": null,
+        "specialization": null,
+        "gender": "male",
+        "address": "Flat 43, Indiranagar, Bangalore",
+        "city": "Bangalore",
+        "state": "West Bengal",
+        "postal_code": "541712",
+        "country": "India",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": "AB+",
+        "allergies": "None",
+        "medical_conditions": "Asthma"
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 22,
+    "fields": {
+        "user": [
+            "patient7"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801850000007",
+        "dob": "1982-06-09",
+        "about": null,
+        "specialization": null,
+        "gender": "male",
+        "address": "Flat 10A, House 30, Road 4, Gulshan",
+        "city": "Rajshahi",
+        "state": "Mymensingh",
+        "postal_code": "6728",
+        "country": "Bangladesh",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": "A-",
+        "allergies": "Food Allergy",
+        "medical_conditions": "Diabetes"
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 23,
+    "fields": {
+        "user": [
+            "patient8"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919856000008",
+        "dob": "1975-10-09",
+        "about": null,
+        "specialization": null,
+        "gender": "female",
+        "address": "Flat 2, Bandra, Chandigarh",
+        "city": "Chandigarh",
+        "state": "Rajasthan",
+        "postal_code": "457235",
+        "country": "India",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": "A+",
+        "allergies": "None",
+        "medical_conditions": "Asthma"
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 24,
+    "fields": {
+        "user": [
+            "patient9"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801850000009",
+        "dob": "1976-05-02",
+        "about": null,
+        "specialization": null,
+        "gender": "female",
+        "address": "Flat 20A, House 66, Road 2, Badda",
+        "city": "Gazipur",
+        "state": "Barisal",
+        "postal_code": "8149",
+        "country": "Bangladesh",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": "AB+",
+        "allergies": "None",
+        "medical_conditions": "High Blood Pressure"
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 25,
+    "fields": {
+        "user": [
+            "patient10"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919856000010",
+        "dob": "1973-12-10",
+        "about": null,
+        "specialization": null,
+        "gender": "female",
+        "address": "Flat 40, T. Nagar, Pune",
+        "city": "Pune",
+        "state": "Delhi",
+        "postal_code": "456239",
+        "country": "India",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": "O+",
+        "allergies": "Drug Allergy",
+        "medical_conditions": "Diabetes"
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 26,
+    "fields": {
+        "user": [
+            "patient11"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801850000011",
+        "dob": "1998-03-20",
+        "about": null,
+        "specialization": null,
+        "gender": "female",
+        "address": "Flat 7A, House 54, Road 11, Badda",
+        "city": "Gazipur",
+        "state": "Khulna",
+        "postal_code": "3085",
+        "country": "Bangladesh",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": "O+",
+        "allergies": "Drug Allergy",
+        "medical_conditions": "None"
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 27,
+    "fields": {
+        "user": [
+            "patient12"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919856000012",
+        "dob": "1984-08-15",
+        "about": null,
+        "specialization": null,
+        "gender": "female",
+        "address": "Flat 38, Malviya Nagar, Chennai",
+        "city": "Chennai",
+        "state": "Telangana",
+        "postal_code": "560770",
+        "country": "India",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": "B-",
+        "allergies": "Drug Allergy",
+        "medical_conditions": "High Blood Pressure"
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 28,
+    "fields": {
+        "user": [
+            "patient13"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801850000013",
+        "dob": "1974-01-02",
+        "about": null,
+        "specialization": null,
+        "gender": "male",
+        "address": "Flat 8A, House 87, Road 5, Uttara",
+        "city": "Khulna",
+        "state": "Barisal",
+        "postal_code": "2530",
+        "country": "Bangladesh",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": "B-",
+        "allergies": "Drug Allergy",
+        "medical_conditions": "None"
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 29,
+    "fields": {
+        "user": [
+            "patient14"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919856000014",
+        "dob": "1977-03-21",
+        "about": null,
+        "specialization": null,
+        "gender": "female",
+        "address": "Flat 46, Salt Lake, Pune",
+        "city": "Pune",
+        "state": "Madhya Pradesh",
+        "postal_code": "313880",
+        "country": "India",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": "A+",
+        "allergies": "None",
+        "medical_conditions": "Asthma"
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 30,
+    "fields": {
+        "user": [
+            "patient15"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801850000015",
+        "dob": "1995-08-22",
+        "about": null,
+        "specialization": null,
+        "gender": "male",
+        "address": "Flat 18A, House 32, Road 15, Banani",
+        "city": "Sylhet",
+        "state": "Mymensingh",
+        "postal_code": "1822",
+        "country": "Bangladesh",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": "O-",
+        "allergies": "Drug Allergy",
+        "medical_conditions": "Asthma"
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 31,
+    "fields": {
+        "user": [
+            "manjurulhoque"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": null,
+        "dob": null,
+        "about": null,
+        "specialization": null,
+        "gender": "",
+        "address": null,
+        "city": "",
+        "state": "",
+        "postal_code": "",
+        "country": "",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 32,
+    "fields": {
+        "user": [
+            "admin"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "01938924489",
+        "dob": "2024-12-01",
+        "about": null,
+        "specialization": null,
+        "gender": "male",
+        "address": "Shyamoli",
+        "city": "Dhaka",
+        "state": "Dhaka",
+        "postal_code": "1207",
+        "country": "Bangladesh",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": "A+",
+        "allergies": null,
+        "medical_conditions": "test"
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 33,
+    "fields": {
+        "user": [
+            "admin_api"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": null,
+        "dob": null,
+        "about": null,
+        "specialization": null,
+        "gender": "",
+        "address": null,
+        "city": "",
+        "state": "",
+        "postal_code": "",
+        "country": "",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 34,
+    "fields": {
+        "user": [
+            "pat_1850000099"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801850000099",
+        "dob": null,
+        "about": null,
+        "specialization": null,
+        "gender": "other",
+        "address": null,
+        "city": "",
+        "state": "",
+        "postal_code": "",
+        "country": "",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 35,
+    "fields": {
+        "user": [
+            "doctor16"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919876000016",
+        "dob": "1983-10-19",
+        "about": "MBBS from King George's Medical University. 20 years of experience in Pediatrician.",
+        "specialization": "Pediatrician",
+        "gender": "female",
+        "address": "Flat 36, Koregaon Park, Delhi",
+        "city": "Delhi",
+        "state": "Rajasthan",
+        "postal_code": "359565",
+        "country": "India",
+        "price_per_consultation": "997.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 36,
+    "fields": {
+        "user": [
+            "doctor17"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801750000017",
+        "dob": "1987-12-02",
+        "about": "MBBS from Rajshahi Medical College. 8 years of experience in Pediatrician.",
+        "specialization": "Pediatrician",
+        "gender": "female",
+        "address": "House 13, Road 11, Block D, Mohammadpur",
+        "city": "Rangpur",
+        "state": "Rajshahi",
+        "postal_code": "2545",
+        "country": "Bangladesh",
+        "price_per_consultation": "624.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 37,
+    "fields": {
+        "user": [
+            "doctor18"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919876000018",
+        "dob": "1964-07-06",
+        "about": "MBBS from King George's Medical University. 13 years of experience in Pediatrician.",
+        "specialization": "Pediatrician",
+        "gender": "female",
+        "address": "Flat 32, Indiranagar, Indore",
+        "city": "Indore",
+        "state": "West Bengal",
+        "postal_code": "224576",
+        "country": "India",
+        "price_per_consultation": "1447.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 38,
+    "fields": {
+        "user": [
+            "doctor19"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801750000019",
+        "dob": "1975-08-07",
+        "about": "MBBS from Chittagong Medical College. 17 years of experience in Gynecologist.",
+        "specialization": "Gynecologist",
+        "gender": "male",
+        "address": "House 7, Road 11, Block A, Banani",
+        "city": "Chittagong",
+        "state": "Mymensingh",
+        "postal_code": "2604",
+        "country": "Bangladesh",
+        "price_per_consultation": "620.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 39,
+    "fields": {
+        "user": [
+            "doctor20"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919876000020",
+        "dob": "1990-12-26",
+        "about": "MBBS from Christian Medical College. 20 years of experience in Gynecologist.",
+        "specialization": "Gynecologist",
+        "gender": "male",
+        "address": "Flat 34, Koregaon Park, Pune",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "postal_code": "519386",
+        "country": "India",
+        "price_per_consultation": "817.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 40,
+    "fields": {
+        "user": [
+            "doctor21"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801750000021",
+        "dob": "1975-09-28",
+        "about": "MBBS from Dhaka Medical College. 10 years of experience in Gynecologist.",
+        "specialization": "Gynecologist",
+        "gender": "male",
+        "address": "House 75, Road 12, Block A, Mohammadpur",
+        "city": "Khulna",
+        "state": "Rajshahi",
+        "postal_code": "1958",
+        "country": "Bangladesh",
+        "price_per_consultation": "616.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 41,
+    "fields": {
+        "user": [
+            "doctor22"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919876000022",
+        "dob": "1978-04-19",
+        "about": "MBBS from Armed Forces Medical College. 6 years of experience in Dermatologist.",
+        "specialization": "Dermatologist",
+        "gender": "male",
+        "address": "Flat 87, Indiranagar, Bangalore",
+        "city": "Bangalore",
+        "state": "Delhi",
+        "postal_code": "181262",
+        "country": "India",
+        "price_per_consultation": "1768.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 42,
+    "fields": {
+        "user": [
+            "doctor23"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+8801750000023",
+        "dob": "1981-11-10",
+        "about": "MBBS from Sylhet Medical College. 19 years of experience in Dermatologist.",
+        "specialization": "Dermatologist",
+        "gender": "male",
+        "address": "House 27, Road 11, Block C, Uttara",
+        "city": "Rangpur",
+        "state": "Barisal",
+        "postal_code": "5272",
+        "country": "Bangladesh",
+        "price_per_consultation": "1147.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 43,
+    "fields": {
+        "user": [
+            "doctor24"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": "+919876000024",
+        "dob": "1964-06-03",
+        "about": "MBBS from King George's Medical University. 12 years of experience in Dermatologist.",
+        "specialization": "Dermatologist",
+        "gender": "male",
+        "address": "Flat 10, C.G. Road, Mumbai",
+        "city": "Mumbai",
+        "state": "Gujarat",
+        "postal_code": "214837",
+        "country": "India",
+        "price_per_consultation": "1256.00",
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 44,
+    "fields": {
+        "user": [
+            "testuser_live"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": null,
+        "dob": null,
+        "about": null,
+        "specialization": null,
+        "gender": "",
+        "address": null,
+        "city": "",
+        "state": "",
+        "postal_code": "",
+        "country": "",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "accounts.profile",
+    "pk": 45,
+    "fields": {
+        "user": [
+            "user"
+        ],
+        "avatar": "defaults/user.png",
+        "phone": null,
+        "dob": null,
+        "about": null,
+        "specialization": null,
+        "gender": "",
+        "address": null,
+        "city": "",
+        "state": "",
+        "postal_code": "",
+        "country": "",
+        "price_per_consultation": null,
+        "is_available": true,
+        "blood_group": null,
+        "allergies": null,
+        "medical_conditions": null
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 1,
+    "fields": {
+        "start": "09:00:00",
+        "end": "12:00:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 2,
+    "fields": {
+        "start": "14:00:00",
+        "end": "17:00:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 3,
+    "fields": {
+        "start": "14:00:00",
+        "end": "14:30:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 4,
+    "fields": {
+        "start": "09:00:00",
+        "end": "09:30:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 5,
+    "fields": {
+        "start": "00:00:00",
+        "end": "00:30:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 6,
+    "fields": {
+        "start": "01:00:00",
+        "end": "01:30:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 7,
+    "fields": {
+        "start": "02:00:00",
+        "end": "02:30:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 8,
+    "fields": {
+        "start": "10:00:00",
+        "end": "10:30:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 9,
+    "fields": {
+        "start": "18:00:00",
+        "end": "18:30:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 10,
+    "fields": {
+        "start": "16:00:00",
+        "end": "16:30:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 11,
+    "fields": {
+        "start": "15:00:00",
+        "end": "15:30:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 12,
+    "fields": {
+        "start": "14:30:00",
+        "end": "15:00:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 13,
+    "fields": {
+        "start": "15:30:00",
+        "end": "15:30:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 14,
+    "fields": {
+        "start": "20:00:00",
+        "end": "20:30:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 15,
+    "fields": {
+        "start": "21:00:00",
+        "end": "21:30:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 16,
+    "fields": {
+        "start": "10:30:00",
+        "end": "11:00:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 17,
+    "fields": {
+        "start": "19:00:00",
+        "end": "19:30:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 18,
+    "fields": {
+        "start": "12:30:00",
+        "end": "13:00:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 19,
+    "fields": {
+        "start": "15:30:00",
+        "end": "16:00:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 20,
+    "fields": {
+        "start": "17:00:00",
+        "end": "17:30:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 21,
+    "fields": {
+        "start": "11:00:00",
+        "end": "11:30:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.timerange",
+    "pk": 22,
+    "fields": {
+        "start": "22:00:00",
+        "end": "22:30:00",
+        "is_active": true,
+        "slots_per_hour": 4
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "doctor1"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "doctor2"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "doctor3"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "doctor4"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "doctor5"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 6,
+    "fields": {
+        "user": [
+            "doctor6"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 7,
+    "fields": {
+        "user": [
+            "doctor7"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 8,
+    "fields": {
+        "user": [
+            "doctor8"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 9,
+    "fields": {
+        "user": [
+            "doctor9"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 10,
+    "fields": {
+        "user": [
+            "doctor10"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 11,
+    "fields": {
+        "user": [
+            "doctor11"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 12,
+    "fields": {
+        "user": [
+            "doctor12"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 13,
+    "fields": {
+        "user": [
+            "doctor13"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 14,
+    "fields": {
+        "user": [
+            "doctor14"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 15,
+    "fields": {
+        "user": [
+            "doctor15"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 16,
+    "fields": {
+        "user": [
+            "doctor16"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 17,
+    "fields": {
+        "user": [
+            "doctor17"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 18,
+    "fields": {
+        "user": [
+            "doctor18"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 19,
+    "fields": {
+        "user": [
+            "doctor19"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 20,
+    "fields": {
+        "user": [
+            "doctor20"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 21,
+    "fields": {
+        "user": [
+            "doctor21"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 22,
+    "fields": {
+        "user": [
+            "doctor22"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 23,
+    "fields": {
+        "user": [
+            "doctor23"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.saturday",
+    "pk": 24,
+    "fields": {
+        "user": [
+            "doctor24"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "doctor1"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "doctor2"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "doctor3"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "doctor4"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "doctor5"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 6,
+    "fields": {
+        "user": [
+            "doctor6"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 7,
+    "fields": {
+        "user": [
+            "doctor7"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 8,
+    "fields": {
+        "user": [
+            "doctor8"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 9,
+    "fields": {
+        "user": [
+            "doctor9"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 10,
+    "fields": {
+        "user": [
+            "doctor10"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 11,
+    "fields": {
+        "user": [
+            "doctor11"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 12,
+    "fields": {
+        "user": [
+            "doctor12"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 13,
+    "fields": {
+        "user": [
+            "doctor13"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 14,
+    "fields": {
+        "user": [
+            "doctor14"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 15,
+    "fields": {
+        "user": [
+            "doctor15"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 16,
+    "fields": {
+        "user": [
+            "doctor16"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 17,
+    "fields": {
+        "user": [
+            "doctor17"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 18,
+    "fields": {
+        "user": [
+            "doctor18"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 19,
+    "fields": {
+        "user": [
+            "doctor19"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 20,
+    "fields": {
+        "user": [
+            "doctor20"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 21,
+    "fields": {
+        "user": [
+            "doctor21"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 22,
+    "fields": {
+        "user": [
+            "doctor22"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 23,
+    "fields": {
+        "user": [
+            "doctor23"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.sunday",
+    "pk": 24,
+    "fields": {
+        "user": [
+            "doctor24"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "doctor1"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "doctor2"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "doctor3"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "doctor4"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "doctor5"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 6,
+    "fields": {
+        "user": [
+            "doctor6"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 7,
+    "fields": {
+        "user": [
+            "doctor7"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 8,
+    "fields": {
+        "user": [
+            "doctor8"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 9,
+    "fields": {
+        "user": [
+            "doctor9"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 10,
+    "fields": {
+        "user": [
+            "doctor10"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 11,
+    "fields": {
+        "user": [
+            "doctor11"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 12,
+    "fields": {
+        "user": [
+            "doctor12"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 13,
+    "fields": {
+        "user": [
+            "doctor13"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 14,
+    "fields": {
+        "user": [
+            "doctor14"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 15,
+    "fields": {
+        "user": [
+            "doctor15"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 16,
+    "fields": {
+        "user": [
+            "doctor16"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 17,
+    "fields": {
+        "user": [
+            "doctor17"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 18,
+    "fields": {
+        "user": [
+            "doctor18"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 19,
+    "fields": {
+        "user": [
+            "doctor19"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 20,
+    "fields": {
+        "user": [
+            "doctor20"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 21,
+    "fields": {
+        "user": [
+            "doctor21"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 22,
+    "fields": {
+        "user": [
+            "doctor22"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 23,
+    "fields": {
+        "user": [
+            "doctor23"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.monday",
+    "pk": 24,
+    "fields": {
+        "user": [
+            "doctor24"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "doctor1"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "doctor2"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "doctor3"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "doctor4"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "doctor5"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 6,
+    "fields": {
+        "user": [
+            "doctor6"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 7,
+    "fields": {
+        "user": [
+            "doctor7"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 8,
+    "fields": {
+        "user": [
+            "doctor8"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 9,
+    "fields": {
+        "user": [
+            "doctor9"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 10,
+    "fields": {
+        "user": [
+            "doctor10"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 11,
+    "fields": {
+        "user": [
+            "doctor11"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 12,
+    "fields": {
+        "user": [
+            "doctor12"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 13,
+    "fields": {
+        "user": [
+            "doctor13"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 14,
+    "fields": {
+        "user": [
+            "doctor14"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 15,
+    "fields": {
+        "user": [
+            "doctor15"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 16,
+    "fields": {
+        "user": [
+            "doctor16"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 17,
+    "fields": {
+        "user": [
+            "doctor17"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 18,
+    "fields": {
+        "user": [
+            "doctor18"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 19,
+    "fields": {
+        "user": [
+            "doctor19"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 20,
+    "fields": {
+        "user": [
+            "doctor20"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 21,
+    "fields": {
+        "user": [
+            "doctor21"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 22,
+    "fields": {
+        "user": [
+            "doctor22"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 23,
+    "fields": {
+        "user": [
+            "doctor23"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.tuesday",
+    "pk": 24,
+    "fields": {
+        "user": [
+            "doctor24"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "doctor1"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "doctor2"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "doctor3"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "doctor4"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "doctor5"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 6,
+    "fields": {
+        "user": [
+            "doctor6"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 7,
+    "fields": {
+        "user": [
+            "doctor7"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 8,
+    "fields": {
+        "user": [
+            "doctor8"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 9,
+    "fields": {
+        "user": [
+            "doctor9"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 10,
+    "fields": {
+        "user": [
+            "doctor10"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 11,
+    "fields": {
+        "user": [
+            "doctor11"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 12,
+    "fields": {
+        "user": [
+            "doctor12"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 13,
+    "fields": {
+        "user": [
+            "doctor13"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 14,
+    "fields": {
+        "user": [
+            "doctor14"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 15,
+    "fields": {
+        "user": [
+            "doctor15"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 16,
+    "fields": {
+        "user": [
+            "doctor16"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 17,
+    "fields": {
+        "user": [
+            "doctor17"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 18,
+    "fields": {
+        "user": [
+            "doctor18"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 19,
+    "fields": {
+        "user": [
+            "doctor19"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 20,
+    "fields": {
+        "user": [
+            "doctor20"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 21,
+    "fields": {
+        "user": [
+            "doctor21"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 22,
+    "fields": {
+        "user": [
+            "doctor22"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 23,
+    "fields": {
+        "user": [
+            "doctor23"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.wednesday",
+    "pk": 24,
+    "fields": {
+        "user": [
+            "doctor24"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "doctor1"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "doctor2"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "doctor3"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "doctor4"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "doctor5"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 6,
+    "fields": {
+        "user": [
+            "doctor6"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 7,
+    "fields": {
+        "user": [
+            "doctor7"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 8,
+    "fields": {
+        "user": [
+            "doctor8"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 9,
+    "fields": {
+        "user": [
+            "doctor9"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 10,
+    "fields": {
+        "user": [
+            "doctor10"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 11,
+    "fields": {
+        "user": [
+            "doctor11"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 12,
+    "fields": {
+        "user": [
+            "doctor12"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 13,
+    "fields": {
+        "user": [
+            "doctor13"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 14,
+    "fields": {
+        "user": [
+            "doctor14"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 15,
+    "fields": {
+        "user": [
+            "doctor15"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 16,
+    "fields": {
+        "user": [
+            "doctor16"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 17,
+    "fields": {
+        "user": [
+            "doctor17"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 18,
+    "fields": {
+        "user": [
+            "doctor18"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 19,
+    "fields": {
+        "user": [
+            "doctor19"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 20,
+    "fields": {
+        "user": [
+            "doctor20"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 21,
+    "fields": {
+        "user": [
+            "doctor21"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 22,
+    "fields": {
+        "user": [
+            "doctor22"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 23,
+    "fields": {
+        "user": [
+            "doctor23"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.thursday",
+    "pk": 24,
+    "fields": {
+        "user": [
+            "doctor24"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "doctor1"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "doctor2"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "doctor3"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "doctor4"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "doctor5"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 6,
+    "fields": {
+        "user": [
+            "doctor6"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 7,
+    "fields": {
+        "user": [
+            "doctor7"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 8,
+    "fields": {
+        "user": [
+            "doctor8"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 9,
+    "fields": {
+        "user": [
+            "doctor9"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 10,
+    "fields": {
+        "user": [
+            "doctor10"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 11,
+    "fields": {
+        "user": [
+            "doctor11"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 12,
+    "fields": {
+        "user": [
+            "doctor12"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 13,
+    "fields": {
+        "user": [
+            "doctor13"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 14,
+    "fields": {
+        "user": [
+            "doctor14"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 15,
+    "fields": {
+        "user": [
+            "doctor15"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 16,
+    "fields": {
+        "user": [
+            "doctor16"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 17,
+    "fields": {
+        "user": [
+            "doctor17"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 18,
+    "fields": {
+        "user": [
+            "doctor18"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 19,
+    "fields": {
+        "user": [
+            "doctor19"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 20,
+    "fields": {
+        "user": [
+            "doctor20"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 21,
+    "fields": {
+        "user": [
+            "doctor21"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 22,
+    "fields": {
+        "user": [
+            "doctor22"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 23,
+    "fields": {
+        "user": [
+            "doctor23"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "doctors.friday",
+    "pk": 24,
+    "fields": {
+        "user": [
+            "doctor24"
+        ],
+        "time_range": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "bookings.booking",
+    "pk": 1,
+    "fields": {
+        "doctor": [
+            "doctor1"
+        ],
+        "patient": [
+            "manjurulhoque"
+        ],
+        "appointment_date": "2024-12-23",
+        "appointment_time": "14:00:00",
+        "booking_date": "2024-12-22T15:45:12.934Z",
+        "status": "completed"
+    }
+},
+{
+    "model": "bookings.booking",
+    "pk": 2,
+    "fields": {
+        "doctor": [
+            "doctor1"
+        ],
+        "patient": [
+            "manjurulhoque"
+        ],
+        "appointment_date": "2024-12-22",
+        "appointment_time": "12:00:00",
+        "booking_date": "2024-12-22T15:45:21.190Z",
+        "status": "cancelled"
+    }
+},
+{
+    "model": "bookings.booking",
+    "pk": 3,
+    "fields": {
+        "doctor": [
+            "doctor1"
+        ],
+        "patient": [
+            "admin"
+        ],
+        "appointment_date": "2024-12-24",
+        "appointment_time": "09:00:00",
+        "booking_date": "2024-12-22T19:01:56.471Z",
+        "status": "completed"
+    }
+},
+{
+    "model": "bookings.booking",
+    "pk": 4,
+    "fields": {
+        "doctor": [
+            "doctor3"
+        ],
+        "patient": [
+            "manjurulhoque"
+        ],
+        "appointment_date": "2024-12-27",
+        "appointment_time": "16:00:00",
+        "booking_date": "2024-12-23T12:36:30.724Z",
+        "status": "pending"
+    }
+},
+{
+    "model": "bookings.booking",
+    "pk": 5,
+    "fields": {
+        "doctor": [
+            "doctor3"
+        ],
+        "patient": [
+            "manjurulhoque"
+        ],
+        "appointment_date": "2024-12-27",
+        "appointment_time": "14:30:00",
+        "booking_date": "2024-12-23T12:45:52.078Z",
+        "status": "pending"
+    }
+},
+{
+    "model": "bookings.booking",
+    "pk": 6,
+    "fields": {
+        "doctor": [
+            "doctor3"
+        ],
+        "patient": [
+            "manjurulhoque"
+        ],
+        "appointment_date": "2024-12-26",
+        "appointment_time": "15:00:00",
+        "booking_date": "2024-12-23T12:51:28.204Z",
+        "status": "pending"
+    }
+},
+{
+    "model": "bookings.booking",
+    "pk": 7,
+    "fields": {
+        "doctor": [
+            "doctor3"
+        ],
+        "patient": [
+            "patient1"
+        ],
+        "appointment_date": "2024-12-29",
+        "appointment_time": "00:00:00",
+        "booking_date": "2024-12-27T15:16:44.416Z",
+        "status": "completed"
+    }
+},
+{
+    "model": "bookings.booking",
+    "pk": 8,
+    "fields": {
+        "doctor": [
+            "doctor3"
+        ],
+        "patient": [
+            "patient1"
+        ],
+        "appointment_date": "2024-12-29",
+        "appointment_time": "01:00:00",
+        "booking_date": "2024-12-27T15:38:32.778Z",
+        "status": "completed"
+    }
+},
+{
+    "model": "bookings.booking",
+    "pk": 9,
+    "fields": {
+        "doctor": [
+            "doctor5"
+        ],
+        "patient": [
+            "patient1"
+        ],
+        "appointment_date": "2024-12-28",
+        "appointment_time": "10:00:00",
+        "booking_date": "2024-12-27T15:41:51.962Z",
+        "status": "completed"
+    }
+},
+{
+    "model": "bookings.booking",
+    "pk": 10,
+    "fields": {
+        "doctor": [
+            "doctor5"
+        ],
+        "patient": [
+            "patient1"
+        ],
+        "appointment_date": "2024-12-30",
+        "appointment_time": "10:00:00",
+        "booking_date": "2024-12-27T15:41:56.400Z",
+        "status": "completed"
+    }
+},
+{
+    "model": "bookings.booking",
+    "pk": 11,
+    "fields": {
+        "doctor": [
+            "doctor5"
+        ],
+        "patient": [
+            "patient2"
+        ],
+        "appointment_date": "2024-12-31",
+        "appointment_time": "15:30:00",
+        "booking_date": "2024-12-27T17:21:23.609Z",
+        "status": "completed"
+    }
+},
+{
+    "model": "bookings.booking",
+    "pk": 12,
+    "fields": {
+        "doctor": [
+            "doctor6"
+        ],
+        "patient": [
+            "patient2"
+        ],
+        "appointment_date": "2024-12-29",
+        "appointment_time": "10:30:00",
+        "booking_date": "2024-12-27T17:24:25.429Z",
+        "status": "completed"
+    }
+},
+{
+    "model": "bookings.booking",
+    "pk": 13,
+    "fields": {
+        "doctor": [
+            "doctor6"
+        ],
+        "patient": [
+            "patient3"
+        ],
+        "appointment_date": "2024-12-30",
+        "appointment_time": "21:00:00",
+        "booking_date": "2024-12-27T17:25:56.867Z",
+        "status": "completed"
+    }
+},
+{
+    "model": "bookings.booking",
+    "pk": 14,
+    "fields": {
+        "doctor": [
+            "doctor1"
+        ],
+        "patient": [
+            "patient1"
+        ],
+        "appointment_date": "2026-08-02",
+        "appointment_time": "12:00:00",
+        "booking_date": "2026-07-29T14:33:44.338Z",
+        "status": "pending"
+    }
+},
+{
+    "model": "bookings.booking",
+    "pk": 15,
+    "fields": {
+        "doctor": [
+            "doctor1"
+        ],
+        "patient": [
+            "patient1"
+        ],
+        "appointment_date": "2026-08-02",
+        "appointment_time": "12:15:00",
+        "booking_date": "2026-07-30T02:57:35.708Z",
+        "status": "pending"
+    }
+},
+{
+    "model": "bookings.prescription",
+    "pk": 1,
+    "fields": {
+        "booking": 1,
+        "doctor": [
+            "doctor1"
+        ],
+        "patient": [
+            "manjurulhoque"
+        ],
+        "symptoms": "Test",
+        "diagnosis": "gdfg",
+        "medications": "<ol>\r\n\t<li><strong>Test</strong></li>\r\n\t<li><strong>Test</strong></li>\r\n</ol>",
+        "notes": "",
+        "created_at": "2024-12-26T19:46:21.372Z",
+        "updated_at": "2024-12-26T19:46:21.372Z"
+    }
+},
+{
+    "model": "bookings.prescription",
+    "pk": 2,
+    "fields": {
+        "booking": 7,
+        "doctor": [
+            "doctor3"
+        ],
+        "patient": [
+            "patient1"
+        ],
+        "symptoms": "Fever, headache, muscle pain.",
+        "diagnosis": "Viral fever.",
+        "medications": "<ul>\r\n\t<li>Paracetamol 500mg: 1 tablet every 6 hours as needed for fever.</li>\r\n\t<li>Drink plenty of fluids and rest.<br />\r\n\t<strong>Additional Notes:</strong> Monitor temperature regularly. Seek medical attention if fever persists beyond 3 days.</li>\r\n</ul>",
+        "notes": "",
+        "created_at": "2024-12-27T15:37:59.190Z",
+        "updated_at": "2024-12-27T15:37:59.190Z"
+    }
+},
+{
+    "model": "bookings.prescription",
+    "pk": 3,
+    "fields": {
+        "booking": 8,
+        "doctor": [
+            "doctor3"
+        ],
+        "patient": [
+            "patient1"
+        ],
+        "symptoms": "Cough, sore throat, nasal congestion.",
+        "diagnosis": "Upper respiratory tract infection (URTI).",
+        "medications": "<ul>\r\n\t<li>Amoxicillin 500mg: 1 capsule every 8 hours for 7 days.</li>\r\n\t<li>Cetirizine 10mg: 1 tablet at night for 5 days.</li>\r\n\t<li>Saltwater gargle twice daily.<br />\r\n\t<strong>Additional Notes:</strong> Avoid cold beverages and dusty environments.</li>\r\n</ul>",
+        "notes": "",
+        "created_at": "2024-12-27T15:39:55.518Z",
+        "updated_at": "2024-12-27T15:39:55.518Z"
+    }
+},
+{
+    "model": "bookings.prescription",
+    "pk": 4,
+    "fields": {
+        "booking": 9,
+        "doctor": [
+            "doctor5"
+        ],
+        "patient": [
+            "patient1"
+        ],
+        "symptoms": "Abdominal pain, nausea, vomiting.",
+        "diagnosis": "Gastritis",
+        "medications": "<ul>\r\n\t<li>Pantoprazole 40mg: 1 tablet before breakfast for 14 days.</li>\r\n\t<li>Antacid syrup: 10ml after meals, 3 times daily.<br />\r\n\t<strong>Additional Notes:</strong> Avoid spicy, fried foods. Eat smaller, more frequent meals.</li>\r\n</ul>",
+        "notes": "",
+        "created_at": "2024-12-27T16:16:08.596Z",
+        "updated_at": "2024-12-27T16:16:08.596Z"
+    }
+},
+{
+    "model": "bookings.prescription",
+    "pk": 5,
+    "fields": {
+        "booking": 10,
+        "doctor": [
+            "doctor5"
+        ],
+        "patient": [
+            "patient1"
+        ],
+        "symptoms": "Joint pain, stiffness, swelling.",
+        "diagnosis": "Rheumatoid arthritis.",
+        "medications": "<ul>\r\n\t<li>Methotrexate 7.5mg: 1 tablet once weekly.</li>\r\n\t<li>Folic acid 5mg: 1 tablet the day after methotrexate.<br />\r\n\t<strong>Additional Notes:</strong> Schedule a follow-up for evaluation and blood tests.</li>\r\n</ul>",
+        "notes": "",
+        "created_at": "2024-12-27T17:13:25.139Z",
+        "updated_at": "2024-12-27T17:13:25.139Z"
+    }
+},
+{
+    "model": "bookings.prescription",
+    "pk": 6,
+    "fields": {
+        "booking": 11,
+        "doctor": [
+            "doctor5"
+        ],
+        "patient": [
+            "patient2"
+        ],
+        "symptoms": "Chest pain, shortness of breath, palpitations.",
+        "diagnosis": "Hypertension with angina.",
+        "medications": "<ul>\r\n\t<li>Amlodipine 5mg: 1 tablet daily in the morning.</li>\r\n\t<li>Aspirin 75mg: 1 tablet daily after breakfast.<br />\r\n\t<strong>Additional Notes:</strong> Monitor blood pressure regularly.</li>\r\n</ul>",
+        "notes": "",
+        "created_at": "2024-12-27T17:22:17.114Z",
+        "updated_at": "2024-12-27T17:22:17.114Z"
+    }
+},
+{
+    "model": "bookings.prescription",
+    "pk": 7,
+    "fields": {
+        "booking": 12,
+        "doctor": [
+            "doctor6"
+        ],
+        "patient": [
+            "patient2"
+        ],
+        "symptoms": "Persistent diarrhea, weakness.",
+        "diagnosis": "Acute gastroenteritis.",
+        "medications": "<ul>\r\n\t<li>Oral rehydration salts (ORS): Dissolve one sachet in 1 liter of water and sip frequently.</li>\r\n\t<li>Loperamide 2mg: 1 tablet after each loose stool (maximum 4 tablets per day).<br />\r\n\t<strong>Additional Notes:</strong> Avoid dairy products until recovery.</li>\r\n</ul>",
+        "notes": "",
+        "created_at": "2024-12-27T17:25:24.893Z",
+        "updated_at": "2024-12-27T17:25:24.893Z"
+    }
+},
+{
+    "model": "bookings.prescription",
+    "pk": 8,
+    "fields": {
+        "booking": 13,
+        "doctor": [
+            "doctor6"
+        ],
+        "patient": [
+            "patient3"
+        ],
+        "symptoms": "Skin rash, itching.",
+        "diagnosis": "Allergic dermatitis.",
+        "medications": "<ul>\r\n\t<li>Hydrocortisone cream: Apply thinly to the affected area twice daily.</li>\r\n\t<li>Loratadine 10mg: 1 tablet daily for 7 days.<br />\r\n\t<strong>Additional Notes:</strong> Identify and avoid allergens.</li>\r\n</ul>",
+        "notes": "",
+        "created_at": "2024-12-27T17:27:42.285Z",
+        "updated_at": "2024-12-27T17:27:42.285Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "5a5aa6b1cfb693847362ac0b3868d8f3c5a410a0",
+    "fields": {
+        "user": [
+            "doctor1"
+        ],
+        "created": "2026-07-31T04:22:31.925Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "74b95f0499be6f6bc887500baccbb984cc7c01c5",
+    "fields": {
+        "user": [
+            "admin_api"
+        ],
+        "created": "2026-07-29T14:31:37.960Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "79b82483071f4b22dc0a795971cbfa51eba9a08c",
+    "fields": {
+        "user": [
+            "user"
+        ],
+        "created": "2026-08-03T08:55:47.765Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "8c08672e21fc3dbd2eac839eb0f2022c0c34661c",
+    "fields": {
+        "user": [
+            "testuser_live"
+        ],
+        "created": "2026-08-03T08:52:29.516Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "9fe57e6622ab34b68663dd6781257b47cfc5fca6",
+    "fields": {
+        "user": [
+            "patient2"
+        ],
+        "created": "2026-07-30T03:27:16.392Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "d4ed4b8e7bca6f4bad8927c7133cccc194b0e755",
+    "fields": {
+        "user": [
+            "patient1"
+        ],
+        "created": "2026-07-29T14:36:53.903Z"
+    }
+},
+{
+    "model": "core.review",
+    "pk": 1,
+    "fields": {
+        "patient": [
+            "manjurulhoque"
+        ],
+        "doctor": [
+            "doctor1"
+        ],
+        "booking": 1,
+        "rating": 4,
+        "review": "Good",
+        "created_at": "2024-12-26T18:10:15.085Z",
+        "updated_at": "2024-12-26T18:10:15.085Z"
+    }
+},
+{
+    "model": "core.review",
+    "pk": 2,
+    "fields": {
+        "patient": [
+            "patient3"
+        ],
+        "doctor": [
+            "doctor6"
+        ],
+        "booking": 13,
+        "rating": 2,
+        "review": "Thank you!",
+        "created_at": "2024-12-27T17:28:01.542Z",
+        "updated_at": "2024-12-27T17:28:01.542Z"
+    }
+},
+{
+    "model": "core.review",
+    "pk": 3,
+    "fields": {
+        "patient": [
+            "admin"
+        ],
+        "doctor": [
+            "doctor1"
+        ],
+        "booking": 3,
+        "rating": 4,
+        "review": "Thanks",
+        "created_at": "2025-04-22T18:16:50.753Z",
+        "updated_at": "2025-04-22T18:16:50.753Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-12-22T15:40:00.332Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "accounts",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "doctor1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-12-22T18:49:16.872Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "accounts",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "doctor1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-12-23T12:31:13.545Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "accounts",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "doctor3",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-12-23T12:31:27.153Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "accounts",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "doctor4",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-12-26T18:09:41.256Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "bookings",
+            "booking"
+        ],
+        "object_id": "1",
+        "object_repr": "Appointment with Dr. Sadia Hossain on 2024-12-23 at 14:00:00",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2025-04-14T17:47:04.775Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "accounts",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "doctor1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+}
+]
