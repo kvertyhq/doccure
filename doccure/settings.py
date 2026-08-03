@@ -9,9 +9,10 @@ if env_file.exists():
     with open(env_file) as f:
         for line in f:
             line = line.strip()
-            if line and not line.startswith("#"):
+            if line and not line.startswith("#") and "=" in line:
                 key, val = line.split("=", 1)
                 os.environ[key.strip()] = val.strip()
+
 
 SECRET_KEY = os.environ.get("SECRET_KEY", "g!y0otek@9t^b+b*7)&q2a5^=8_9&xcdii8@6h^_*wphl-(fu9")
 DEBUG = os.environ.get("DEBUG", "True") == "True"
@@ -98,10 +99,14 @@ WSGI_APPLICATION = "doccure.wsgi.application"
 
 import dj_database_url
 
-if os.environ.get("DATABASE_URL"):
+db_url = os.environ.get("DATABASE_URL")
+if not db_url and os.environ.get("DB_HOST", "").startswith(("postgres://", "postgresql://")):
+    db_url = os.environ.get("DB_HOST")
+
+if db_url:
     DATABASES = {
         "default": dj_database_url.config(
-            default=os.environ.get("DATABASE_URL"),
+            default=db_url,
             conn_max_age=600,
             conn_health_checks=True,
         )
@@ -124,6 +129,7 @@ else:
             "NAME": BASE_DIR / "db.sqlite3",
         }
     }
+
 
 
 AUTH_PASSWORD_VALIDATORS = [
