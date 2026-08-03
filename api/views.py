@@ -12,6 +12,7 @@ from core.models import Speciality
 from bookings.models import Booking
 from api.serializers import (
     LoginSerializer,
+    SignupSerializer,
     PatientSerializer,
     BookingResponseSerializer,
     DoctorSerializer,
@@ -35,6 +36,29 @@ class LoginAPIView(APIView):
                 "token": token.key
             }
         })
+
+
+class SignupAPIView(APIView):
+    permission_classes = [AllowAny]
+    serializer_class = SignupSerializer
+
+    def post(self, request):
+        print("DEBUG: Request Data:", request.data)
+        print("DEBUG: Content Type:", request.content_type)
+        serializer = SignupSerializer(data=request.data)
+
+        serializer.is_valid(raise_exception=True)
+        user = serializer.save()
+        token, created = Token.objects.get_or_create(user=user)
+        return Response({
+            "success": True,
+            "message": "User registered successfully.",
+            "data": {
+                "token": token.key,
+                "email": user.email,
+                "username": user.username
+            }
+        }, status=status.HTTP_201_CREATED)
 
 
 class CustomerLookupAPIView(APIView):
