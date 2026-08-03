@@ -32,6 +32,44 @@ class LoginSerializer(serializers.Serializer):
         return attrs
 
 
+class SignupSerializer(serializers.Serializer):
+    email = serializers.EmailField()
+    password = serializers.CharField(write_only=True)
+
+    def validate_email(self, value):
+        if User.objects.filter(email=value).exists():
+            raise serializers.ValidationError("A user with this email already exists.")
+        return value
+
+    def create(self, validated_data):
+        email = validated_data['email']
+        password = validated_data['password']
+
+        # Generate a unique username from email
+        prefix = email.split('@')[0]
+        clean_prefix = "".join(c for c in prefix if c.isalnum() or c in '_-')[:20]
+        if not clean_prefix:
+            clean_prefix = "user"
+
+        username = clean_prefix
+        counter = 1
+        while User.objects.filter(username=username).exists():
+            suffix = str(counter)
+            username = f"{clean_prefix[:30-len(suffix)]}{suffix}"
+            counter += 1
+
+        user = User.objects.create(
+            username=username,
+            email=email,
+            role=User.RoleChoices.PATIENT,
+            is_active=True
+        )
+        user.set_password(password)
+        user.save()
+        return user
+
+
+
 class PatientSerializer(serializers.ModelSerializer):
     patient_id = serializers.IntegerField(source='id', read_only=True)
     name = serializers.SerializerMethodField()
