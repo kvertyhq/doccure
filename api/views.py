@@ -307,14 +307,59 @@ class DepartmentListAPIView(APIView):
     serializer_class = DepartmentSerializer
 
     def get(self, request):
-        specialties = Speciality.objects.filter(is_active=True)
-        serializer = DepartmentSerializer(specialties, many=True)
-        return Response({
-            "success": True,
-            "data": {
-                "departments": serializer.data
-            }
-        })
+        try:
+            from django.db import connection
+            cursor = connection.cursor()
+            
+            cursor.execute("SELECT current_user")
+            db_user = cursor.fetchone()[0]
+            
+            cursor.execute("SHOW search_path")
+            search_path = cursor.fetchone()[0]
+            
+            cursor.execute("SELECT current_database()")
+            current_db = cursor.fetchone()[0]
+            
+            specialties = Speciality.objects.filter(is_active=True)
+            serializer = DepartmentSerializer(specialties, many=True)
+            return Response({
+                "success": True,
+                "db_debug": {
+                    "current_user": db_user,
+                    "search_path": search_path,
+                    "current_database": current_db
+                },
+                "data": {
+                    "departments": serializer.data
+                }
+            })
+        except Exception as e:
+            from django.db import connection
+            db_user = "unknown"
+            search_path = "unknown"
+            current_db = "unknown"
+            try:
+                cursor = connection.cursor()
+                cursor.execute("SELECT current_user")
+                db_user = cursor.fetchone()[0]
+                cursor.execute("SHOW search_path")
+                search_path = cursor.fetchone()[0]
+                cursor.execute("SELECT current_database()")
+                current_db = cursor.fetchone()[0]
+            except:
+                pass
+                
+            import traceback
+            return Response({
+                "success": False,
+                "db_debug": {
+                    "current_user": db_user,
+                    "search_path": search_path,
+                    "current_database": current_db
+                },
+                "error": str(e),
+                "traceback": traceback.format_exc()
+            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
 class DoctorListAPIView(APIView):
