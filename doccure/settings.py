@@ -28,7 +28,7 @@ for host in raw_hosts:
         host = host.split("//", 1)[1].split("/", 1)[0]
     ALLOWED_HOSTS.append(host)
 
-for host in ["doccure.kverty.com", "www.doccure.kverty.com", "localhost", "127.0.0.1", "testserver"]:
+for host in ["doccure.kverty.com", "www.doccure.kverty.com", "localhost", "127.0.0.1", "testserver", ".ngrok-free.app", ".ngrok.io"]:
     if host not in ALLOWED_HOSTS and host != "*":
         ALLOWED_HOSTS.append(host)
 
@@ -215,4 +215,11 @@ SPECTACULAR_SETTINGS = {
     "DESCRIPTION": "API documentation for the Doccure healthcare platform.",
     "VERSION": "1.0.0",
     "SERVE_INCLUDE_SCHEMA": False,
+}
+
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.redis.RedisCache",
+        "LOCATION": os.environ.get("REDIS_URL", "redis://127.0.0.1:6379/1"),
+    }
 }

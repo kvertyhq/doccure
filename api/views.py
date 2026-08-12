@@ -19,7 +19,12 @@ from api.serializers import (
     DepartmentSerializer,
     AppointmentSerializer
 )
-from api.utils import get_available_slots_for_date, get_next_available_slot
+from api.utils import (
+    get_available_slots_for_date,
+    get_next_available_slot,
+    cache_api_response,
+    invalidate_api_cache
+)
 
 class LoginAPIView(APIView):
     permission_classes = [AllowAny]
@@ -65,6 +70,7 @@ class CustomerLookupAPIView(APIView):
     permission_classes = [IsAuthenticated]
     serializer_class = PatientSerializer
 
+    @cache_api_response()
     def get(self, request):
         phone = request.query_params.get('phone')
         if not phone:
@@ -285,6 +291,7 @@ class BookAppointmentAPIView(APIView):
                 appointment_time=appointment_time,
                 status='pending'
             )
+            invalidate_api_cache()
             serializer = BookingResponseSerializer(booking)
             return Response({
                 "success": True,
@@ -306,6 +313,7 @@ class DepartmentListAPIView(APIView):
     permission_classes = [IsAuthenticated]
     serializer_class = DepartmentSerializer
 
+    @cache_api_response()
     def get(self, request):
         try:
             from django.db import connection
@@ -366,6 +374,7 @@ class DoctorListAPIView(APIView):
     permission_classes = [IsAuthenticated]
     serializer_class = DoctorSerializer
 
+    @cache_api_response()
     def get(self, request):
         dept_name = request.query_params.get('department')
         doctors = User.objects.filter(role=User.RoleChoices.DOCTOR, is_active=True).select_related('profile')
@@ -386,6 +395,7 @@ class DoctorScheduleAPIView(APIView):
     permission_classes = [IsAuthenticated]
     serializer_class = DoctorSerializer # fallback for documentation
 
+    @cache_api_response()
     def get(self, request):
         name = request.query_params.get('name')
         days_str = request.query_params.get('days', '7')
@@ -454,6 +464,7 @@ class MyAppointmentsAPIView(APIView):
     permission_classes = [IsAuthenticated]
     serializer_class = AppointmentSerializer
 
+    @cache_api_response()
     def get(self, request):
         phone = request.query_params.get('phone')
         include_past_str = request.query_params.get('include_past', 'false')
@@ -555,6 +566,7 @@ class RescheduleAppointmentAPIView(APIView):
             booking.appointment_date = appointment_date
             booking.appointment_time = appointment_time
             booking.save()
+            invalidate_api_cache()
             serializer = BookingResponseSerializer(booking)
             return Response({
                 "success": True,
@@ -584,6 +596,7 @@ class CancelAppointmentAPIView(APIView):
         booking = get_object_or_404(Booking, id=appointment_id)
         booking.status = 'cancelled'
         booking.save()
+        invalidate_api_cache()
 
         return Response({
             "success": True,
