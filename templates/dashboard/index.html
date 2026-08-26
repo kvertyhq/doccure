@@ -84,7 +84,7 @@
                         <i class="fe fe-folder"></i>
                     </span>
                     <div class="dash-count">
-                        <h3>৳{{ total_revenue }}</h3>
+                        <h3>₹{{ total_revenue }}</h3>
                     </div>
                 </div>
                 <div class="dash-widget-info">
@@ -159,7 +159,7 @@
                                     </h2>
                                 </td>
                                 <td>{{ doctor.profile.specialization }}</td>
-                                <td>৳{{ doctor.earned }}</td>
+                                <td>₹{{ doctor.earned }}</td>
                                 <td>
                                     <i class="fe fe-star text-warning"></i>
                                     <span>({{ doctor.reviews_count }})</span>
@@ -206,7 +206,7 @@
                                 </td>
                                 <td>{{ patient.profile.phone|default:"N/A" }}</td>
                                 <td>{{ patient.last_visit|date:"d M Y"|default:"No visits" }}</td>
-                                <td class="text-right">৳{{ patient.total_paid }}</td>
+                                <td class="text-right">₹{{ patient.total_paid }}</td>
                             </tr>
                             {% endfor %}
                         </tbody>
@@ -269,7 +269,7 @@
                                     </span>
                                 </td>
                                 <td class="text-right">
-                                    ৳{{ appointment.doctor.profile.price_per_consultation }}
+                                    ₹{{ appointment.doctor.profile.price_per_consultation }}
                                 </td>
                             </tr>
                             {% endfor %}

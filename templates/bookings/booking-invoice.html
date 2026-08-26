@@ -77,7 +77,7 @@
                                                 <td>Consultation Fee</td>
                                                 <td class="text-center">{{ booking.appointment_date }}</td>
                                                 <td class="text-center">{{ booking.appointment_time|time:"h:i A" }}</td>
-                                                <td class="text-right">৳{{ booking.doctor.profile.price_per_consultation }}</td>
+                                                <td class="text-right">₹{{ booking.doctor.profile.price_per_consultation }}</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -89,7 +89,7 @@
                                         <tbody>
                                             <tr>
                                                 <th>Total Amount:</th>
-                                                <td><span>৳{{ total }}</span></td>
+                                                <td><span>₹{{ total }}</span></td>
                                             </tr>
                                         </tbody>
                                     </table>

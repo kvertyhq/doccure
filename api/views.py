@@ -80,6 +80,12 @@ class CustomerLookupAPIView(APIView):
             }, status=status.HTTP_400_BAD_REQUEST)
 
         clean_phone = ''.join(filter(str.isdigit, phone))
+        if not clean_phone:
+            return Response({
+                "success": False,
+                "message": "number was not found register him as a new patient"
+            }, status=status.HTTP_200_OK)
+
         if len(clean_phone) > 10:
             clean_phone = clean_phone[-10:]
 
@@ -125,6 +131,12 @@ class PatientRegisterAPIView(APIView):
             }, status=status.HTTP_400_BAD_REQUEST)
 
         clean_phone = ''.join(filter(str.isdigit, phone))
+        if not clean_phone:
+            return Response({
+                "success": False,
+                "message": "Invalid phone number."
+            }, status=status.HTTP_400_BAD_REQUEST)
+
         if len(clean_phone) > 10:
             clean_phone = clean_phone[-10:]
 

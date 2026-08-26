@@ -80,7 +80,7 @@
                                                         <h5>Appointment Statistics</h5>
                                                         <p><strong>Total Appointments:</strong> {{ patient.total_appointments }}</p>
                                                         <p><strong>Completed Appointments:</strong> {{ patient.completed_appointments }}</p>
-                                                        <p><strong>Total Amount Paid:</strong> ৳{{ patient.total_paid }}</p>
+                                                        <p><strong>Total Amount Paid:</strong> ₹{{ patient.total_paid }}</p>
                                                         <p><strong>Last Visit:</strong> {{ patient.last_visit|date:"d M Y"|default:"Never" }}</p>
                                                     </div>
                                                 </div>
@@ -102,7 +102,7 @@
                                     <td>{{ patient.profile.address|default:"N/A" }}</td>
                                     <td>{{ patient.profile.phone|default:"N/A" }}</td>
                                     <td>{{ patient.last_visit|date:"d M Y"|default:"No visits" }}</td>
-                                    <td class="text-right">৳{{ patient.total_paid|default:"0" }}</td>
+                                    <td class="text-right">₹{{ patient.total_paid|default:"0" }}</td>
                                     <td>
                                         <div class="actions">
                                             <button type="button" class="btn btn-sm bg-info-light" data-toggle="modal" data-target="#patient_details_{{ patient.id }}">

@@ -49,7 +49,7 @@
                                     <br>
                                     <small>{{ doctor.date_joined|time:"h:i A" }}</small>
                                 </td>
-                                <td>৳{{ doctor.earned|default:"0" }}</td>
+                                <td>₹{{ doctor.earned|default:"0" }}</td>
                                 <td>
                                     <span class="badge badge-pill {% if doctor.is_active %}bg-success-light{% else %}bg-danger-light{% endif %}">
                                         {{ doctor.is_active|yesno:"Active,Inactive" }}

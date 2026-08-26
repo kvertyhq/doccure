@@ -120,7 +120,7 @@
                     </div>
                     <div class="about-content">
                         <p>Access quality healthcare from the comfort of your home. Our platform connects you with experienced doctors who provide personalized medical consultations.</p>
-                        <p>Choose from a wide network of verified specialists, check their availability in real-time, and book appointments instantly. We're committed to making healthcare accessible and convenient for everyone in Bangladesh.</p>
+                        <p>Choose from a wide network of verified specialists, check their availability in real-time, and book appointments instantly. We're committed to making healthcare accessible and convenient for everyone in India.</p>
                         <a href="{% url 'doctors:list' %}">View all doctors</a>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                                             <i class="fas fa-map-marker-alt"></i> {{ doctor.profile.city }}, {{ doctor.profile.country }}
                                         </li>
                                         <li>
-                                            <i class="far fa-money-bill-alt"></i> ৳{{ doctor.profile.price_per_consultation }}
+                                            <i class="far fa-money-bill-alt"></i> ₹{{ doctor.profile.price_per_consultation }}
                                             <i class="fas fa-info-circle" data-toggle="tooltip" title="Consultation Fee"></i>
                                         </li>
                                     </ul>
