@@ -19,7 +19,7 @@
             <div class="card-body">
                 <div class="dash-widget-header d-flex flex-column align-items-center">
                     <div class="text-center">
-                        <h3>৳{{ total_revenue }}</h3>
+                        <h3>₹{{ total_revenue }}</h3>
                         <h6>Total Revenue</h6>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
             <div class="card-body">
                 <div class="dash-widget-header d-flex flex-column align-items-center">
                     <div class="text-center">
-                        <h3>৳{{ average_revenue_per_appointment|floatformat:2 }}</h3>
+                        <h3>₹{{ average_revenue_per_appointment|floatformat:2 }}</h3>
                         <h6>Avg. Revenue/Appointment</h6>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
             <div class="card-body">
                 <div class="dash-widget-header d-flex flex-column align-items-center">
                     <div class="text-center">
-                        <h3>৳{{ highest_revenue_day.total|default:0 }}</h3>
+                        <h3>₹{{ highest_revenue_day.total|default:0 }}</h3>
                         <h6>Highest Daily Revenue</h6>
                         <small>{{ highest_revenue_day.day|date:"d M Y"|default:"N/A" }}</small>
                     </div>
@@ -95,7 +95,7 @@
                             <tr>
                                 <td>Dr. {{ stat.doctor__first_name }} {{ stat.doctor__last_name }}</td>
                                 <td>{{ stat.appointments }}</td>
-                                <td>৳{{ stat.revenue }}</td>
+                                <td>₹{{ stat.revenue }}</td>
                             </tr>
                             {% endfor %}
                         </tbody>
@@ -129,8 +129,8 @@
                             <tr>
                                 <td>{{ stat.doctor__profile__specialization__name }}</td>
                                 <td>{{ stat.appointments }}</td>
-                                <td>৳{{ stat.revenue }}</td>
-                                <td>৳{{ stat.revenue|div:stat.appointments|floatformat:2 }}</td>
+                                <td>₹{{ stat.revenue }}</td>
+                                <td>₹{{ stat.revenue|div:stat.appointments|floatformat:2 }}</td>
                                 <td>{{ stat.revenue|div:total_revenue|multiply:100|floatformat:1 }}%</td>
                             </tr>
                             {% endfor %}
@@ -170,7 +170,7 @@
                             const value = context.parsed;
                             const total = context.dataset.data.reduce((a, b) => a + b, 0);
                             const percentage = ((value * 100) / total).toFixed(1);
-                            return `৳${value} (${percentage}%)`;
+                            return `₹${value} (${percentage}%)`;
                         }
                     }
                 }
@@ -204,7 +204,7 @@
                     beginAtZero: true,
                     ticks: {
                         callback: function(value) {
-                            return '৳' + value;
+                            return '₹' + value;
                         }
                     }
                 }
@@ -213,7 +213,7 @@
                 tooltip: {
                     callbacks: {
                         label: function(context) {
-                            return '৳' + context.parsed.y;
+                            return '₹' + context.parsed.y;
                         }
                     }
                 }
