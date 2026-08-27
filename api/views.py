@@ -327,19 +327,30 @@ class DepartmentListAPIView(APIView):
 
     @cache_api_response()
     def get(self, request):
+        db_user = "unknown"
+        search_path = "unknown"
+        current_db = "unknown"
+        
         try:
             from django.db import connection
-            cursor = connection.cursor()
-            
-            cursor.execute("SELECT current_user")
-            db_user = cursor.fetchone()[0]
-            
-            cursor.execute("SHOW search_path")
-            search_path = cursor.fetchone()[0]
-            
-            cursor.execute("SELECT current_database()")
-            current_db = cursor.fetchone()[0]
-            
+            if connection.vendor == 'postgresql':
+                cursor = connection.cursor()
+                cursor.execute("SELECT current_user")
+                db_user = cursor.fetchone()[0]
+                
+                cursor.execute("SHOW search_path")
+                search_path = cursor.fetchone()[0]
+                
+                cursor.execute("SELECT current_database()")
+                current_db = cursor.fetchone()[0]
+            else:
+                db_user = "sqlite_user"
+                search_path = "N/A"
+                current_db = connection.settings_dict.get('NAME', 'sqlite_db')
+        except Exception:
+            pass
+
+        try:
             specialties = Speciality.objects.filter(is_active=True)
             serializer = DepartmentSerializer(specialties, many=True)
             return Response({
@@ -354,21 +365,6 @@ class DepartmentListAPIView(APIView):
                 }
             })
         except Exception as e:
-            from django.db import connection
-            db_user = "unknown"
-            search_path = "unknown"
-            current_db = "unknown"
-            try:
-                cursor = connection.cursor()
-                cursor.execute("SELECT current_user")
-                db_user = cursor.fetchone()[0]
-                cursor.execute("SHOW search_path")
-                search_path = cursor.fetchone()[0]
-                cursor.execute("SELECT current_database()")
-                current_db = cursor.fetchone()[0]
-            except:
-                pass
-                
             import traceback
             return Response({
                 "success": False,
