@@ -30,8 +30,6 @@ RUN apk update \
 # Copy the rest of the application
 COPY . .
 
-RUN cp .env.example .env
-
 ENV APP_HOME=/usr/src/app
 # No need to create directories twice
 RUN mkdir -p $APP_HOME/staticfiles && mkdir -p $APP_HOME/media
@@ -39,4 +37,5 @@ RUN mkdir -p $APP_HOME/staticfiles && mkdir -p $APP_HOME/media
 RUN echo "Running from production dockerfile"
 
 # Collect static files
-RUN python manage.py collectstatic --noinput
+RUN SECRET_KEY=build_time_dummy_key DEBUG=True python manage.py collectstatic --noinput
+
