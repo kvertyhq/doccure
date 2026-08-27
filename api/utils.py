@@ -42,10 +42,39 @@ def combined_in_past(target_date, target_time):
 
 def get_next_available_slot(doctor):
     today = date.today()
-    # Check next 30 days
+    end_date = today + timedelta(days=29)
+    booked_slots = set(
+        doctor.appointments.filter(
+            appointment_date__range=(today, end_date),
+            status__in=['pending', 'confirmed', 'completed']
+        ).values_list('appointment_date', 'appointment_time')
+    )
+
+    weekly_schedules = {}
+    for day_offset in range(7):
+        schedule_date = today + timedelta(days=day_offset)
+        day_schedule = getattr(doctor, schedule_date.strftime('%A').lower(), None)
+        weekly_schedules[schedule_date.weekday()] = (
+            list(day_schedule.time_range.all()) if day_schedule else []
+        )
+
+    # Check next 30 days using the data fetched above.
     for i in range(30):
         target_date = today + timedelta(days=i)
-        slots = get_available_slots_for_date(doctor, target_date)
+        slots = []
+        for time_range in weekly_schedules[target_date.weekday()]:
+            current_dt = datetime.combine(target_date, time_range.start)
+            end_dt = datetime.combine(target_date, time_range.end)
+            duration = time_range.get_slot_duration()
+
+            while current_dt < end_dt:
+                slot_time = current_dt.time()
+                if target_date != today or not combined_in_past(target_date, slot_time):
+                    if (target_date, slot_time) not in booked_slots:
+                        slots.append(slot_time.strftime('%H:%M'))
+                current_dt += timedelta(minutes=duration)
+
+        slots = sorted(set(slots))
         if slots:
             return f"{target_date.strftime('%Y-%m-%d')} {slots[0]}"
     return None
