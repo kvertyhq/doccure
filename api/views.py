@@ -385,10 +385,32 @@ class DoctorListAPIView(APIView):
     @cache_api_response()
     def get(self, request):
         dept_name = request.query_params.get('department')
-        doctors = User.objects.filter(role=User.RoleChoices.DOCTOR, is_active=True).select_related('profile')
+        doctors = User.objects.filter(
+            role=User.RoleChoices.DOCTOR,
+            is_active=True
+        ).select_related(
+            'profile',
+            'saturday',
+            'sunday',
+            'monday',
+            'tuesday',
+            'wednesday',
+            'thursday',
+            'friday'
+        ).prefetch_related(
+            'appointments',
+            'saturday__time_range',
+            'sunday__time_range',
+            'monday__time_range',
+            'tuesday__time_range',
+            'wednesday__time_range',
+            'thursday__time_range',
+            'friday__time_range'
+        )
 
         if dept_name:
             doctors = doctors.filter(specialties__name__iexact=dept_name)
+
 
         serializer = DoctorSerializer(doctors, many=True)
         return Response({
@@ -437,6 +459,22 @@ class DoctorScheduleAPIView(APIView):
         doctor = User.objects.filter(
             role=User.RoleChoices.DOCTOR,
             is_active=True
+        ).select_related(
+            'saturday',
+            'sunday',
+            'monday',
+            'tuesday',
+            'wednesday',
+            'thursday',
+            'friday'
+        ).prefetch_related(
+            'saturday__time_range',
+            'sunday__time_range',
+            'monday__time_range',
+            'tuesday__time_range',
+            'wednesday__time_range',
+            'thursday__time_range',
+            'friday__time_range'
         ).annotate(
             full_name=Concat('first_name', Value(' '), 'last_name')
         ).filter(
@@ -451,11 +489,19 @@ class DoctorScheduleAPIView(APIView):
                 "message": "Doctor not found."
             }, status=status.HTTP_404_NOT_FOUND)
 
-        schedule = {}
         today = date.today()
+        end_date = today + timedelta(days=days)
+        booked_slots = set(
+            doctor.appointments.filter(
+                appointment_date__range=(today, end_date),
+                status__in=['pending', 'confirmed', 'completed']
+            ).values_list('appointment_date', 'appointment_time')
+        )
+
+        schedule = {}
         for i in range(days):
             target_date = today + timedelta(days=i)
-            slots = get_available_slots_for_date(doctor, target_date)
+            slots = get_available_slots_for_date(doctor, target_date, booked_slots=booked_slots)
             schedule[target_date.strftime("%Y-%m-%d")] = slots
 
         return Response({

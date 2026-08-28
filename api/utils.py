@@ -1,7 +1,7 @@
 from datetime import datetime, date, time, timedelta
 from bookings.models import Booking
 
-def get_available_slots_for_date(doctor, target_date):
+def get_available_slots_for_date(doctor, target_date, booked_slots=None):
     day_name = target_date.strftime("%A").lower()
     day_schedule = getattr(doctor, day_name, None)
 
@@ -10,11 +10,17 @@ def get_available_slots_for_date(doctor, target_date):
 
     time_slots = []
     # Fetch all time ranges for this day
-    time_ranges = day_schedule.time_range.all()
+    if hasattr(day_schedule, '_prefetched_objects_cache') and 'time_range' in day_schedule._prefetched_objects_cache:
+        time_ranges = day_schedule._prefetched_objects_cache['time_range']
+    else:
+        time_ranges = day_schedule.time_range.all()
+
     for tr in time_ranges:
         current_dt = datetime.combine(target_date, tr.start)
         end_dt = datetime.combine(target_date, tr.end)
         duration = tr.get_slot_duration()
+        if duration <= 0:
+            continue
 
         while current_dt < end_dt:
             slot_time = current_dt.time()
@@ -25,11 +31,14 @@ def get_available_slots_for_date(doctor, target_date):
                 continue
 
             # Check if booked
-            is_booked = doctor.appointments.filter(
-                appointment_date=target_date,
-                appointment_time=slot_time,
-                status__in=['pending', 'confirmed', 'completed']
-            ).exists()
+            if booked_slots is not None:
+                is_booked = (target_date, slot_time) in booked_slots
+            else:
+                is_booked = doctor.appointments.filter(
+                    appointment_date=target_date,
+                    appointment_time=slot_time,
+                    status__in=['pending', 'confirmed', 'completed']
+                ).exists()
 
             if not is_booked:
                 time_slots.append(slot_time.strftime("%H:%M"))
@@ -43,20 +52,33 @@ def combined_in_past(target_date, target_time):
 def get_next_available_slot(doctor):
     today = date.today()
     end_date = today + timedelta(days=29)
-    booked_slots = set(
-        doctor.appointments.filter(
+    
+    if hasattr(doctor, '_prefetched_objects_cache') and 'appointments' in doctor._prefetched_objects_cache:
+        appointments_list = doctor._prefetched_objects_cache['appointments']
+    else:
+        appointments_list = doctor.appointments.filter(
             appointment_date__range=(today, end_date),
             status__in=['pending', 'confirmed', 'completed']
-        ).values_list('appointment_date', 'appointment_time')
-    )
+        )
+
+    booked_slots = {
+        (app.appointment_date, app.appointment_time)
+        for app in appointments_list
+        if today <= app.appointment_date <= end_date and app.status in ['pending', 'confirmed', 'completed']
+    }
 
     weekly_schedules = {}
     for day_offset in range(7):
         schedule_date = today + timedelta(days=day_offset)
         day_schedule = getattr(doctor, schedule_date.strftime('%A').lower(), None)
-        weekly_schedules[schedule_date.weekday()] = (
-            list(day_schedule.time_range.all()) if day_schedule else []
-        )
+        if day_schedule:
+            if hasattr(day_schedule, '_prefetched_objects_cache') and 'time_range' in day_schedule._prefetched_objects_cache:
+                ranges = day_schedule._prefetched_objects_cache['time_range']
+            else:
+                ranges = day_schedule.time_range.all()
+            weekly_schedules[schedule_date.weekday()] = list(ranges)
+        else:
+            weekly_schedules[schedule_date.weekday()] = []
 
     # Check next 30 days using the data fetched above.
     for i in range(30):
@@ -66,6 +88,8 @@ def get_next_available_slot(doctor):
             current_dt = datetime.combine(target_date, time_range.start)
             end_dt = datetime.combine(target_date, time_range.end)
             duration = time_range.get_slot_duration()
+            if duration <= 0:
+                continue
 
             while current_dt < end_dt:
                 slot_time = current_dt.time()
@@ -78,6 +102,7 @@ def get_next_available_slot(doctor):
         if slots:
             return f"{target_date.strftime('%Y-%m-%d')} {slots[0]}"
     return None
+
 
 
 import hashlib

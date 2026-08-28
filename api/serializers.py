@@ -167,7 +167,26 @@ class DepartmentSerializer(serializers.Serializer):
         return User.objects.filter(
             role=User.RoleChoices.DOCTOR,
             is_active=True
-        ).filter(query)
+        ).filter(query).select_related(
+            'profile',
+            'saturday',
+            'sunday',
+            'monday',
+            'tuesday',
+            'wednesday',
+            'thursday',
+            'friday'
+        ).prefetch_related(
+            'appointments',
+            'saturday__time_range',
+            'sunday__time_range',
+            'monday__time_range',
+            'tuesday__time_range',
+            'wednesday__time_range',
+            'thursday__time_range',
+            'friday__time_range'
+        )
+
 
 
 class AppointmentSerializer(serializers.ModelSerializer):
