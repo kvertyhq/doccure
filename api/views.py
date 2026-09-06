@@ -1,3 +1,4 @@
+import json
 from datetime import datetime, date, timedelta
 from rest_framework import status
 from rest_framework.views import APIView
@@ -327,54 +328,52 @@ class DepartmentListAPIView(APIView):
 
     @cache_api_response()
     def get(self, request):
-        db_user = "unknown"
-        search_path = "unknown"
-        current_db = "unknown"
-        
-        try:
-            from django.db import connection
-            if connection.vendor == 'postgresql':
-                cursor = connection.cursor()
-                cursor.execute("SELECT current_user")
-                db_user = cursor.fetchone()[0]
-                
-                cursor.execute("SHOW search_path")
-                search_path = cursor.fetchone()[0]
-                
-                cursor.execute("SELECT current_database()")
-                current_db = cursor.fetchone()[0]
-            else:
-                db_user = "sqlite_user"
-                search_path = "N/A"
-                current_db = connection.settings_dict.get('NAME', 'sqlite_db')
-        except Exception:
-            pass
-
         try:
             specialties = Speciality.objects.filter(is_active=True)
             serializer = DepartmentSerializer(specialties, many=True)
+
+            summary_parts = []
+            raw_departments = []
+
+            for dept in serializer.data:
+                dept_name = dept.get("department", "")
+                doctors = dept.get("doctors", [])
+
+                if doctors:
+                    doc_strs = [
+                        f"{doc['name']} (ID: {doc['doctor_id']})"
+                        for doc in doctors
+                        if doc.get("name") and doc.get("doctor_id")
+                    ]
+                    if doc_strs:
+                        summary_parts.append(f"{dept_name}: {', '.join(doc_strs)}")
+
+                    raw_doctors = [
+                        {
+                            "doctor_id": doc["doctor_id"],
+                            "name": doc["name"]
+                        }
+                        for doc in doctors
+                        if doc.get("doctor_id") and doc.get("name")
+                    ]
+                    if raw_doctors:
+                        raw_departments.append({
+                            "department": dept_name,
+                            "doctors": raw_doctors
+                        })
+
+            summary = " | ".join(summary_parts)
+            raw_json_string = json.dumps(raw_departments, separators=(',', ':'))
+
             return Response({
                 "success": True,
-                "db_debug": {
-                    "current_user": db_user,
-                    "search_path": search_path,
-                    "current_database": current_db
-                },
-                "data": {
-                    "departments": serializer.data
-                }
+                "summary": summary,
+                "raw_json_string": raw_json_string
             })
         except Exception as e:
-            import traceback
             return Response({
                 "success": False,
-                "db_debug": {
-                    "current_user": db_user,
-                    "search_path": search_path,
-                    "current_database": current_db
-                },
-                "error": str(e),
-                "traceback": traceback.format_exc()
+                "message": str(e)
             }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
