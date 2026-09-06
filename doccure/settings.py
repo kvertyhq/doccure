@@ -104,13 +104,22 @@ if not db_url and os.environ.get("DB_HOST", "").startswith(("postgres://", "post
     db_url = os.environ.get("DB_HOST")
 
 if db_url:
+    # If using Supabase pooler or external pooler, conn_max_age should default to 0
+    # to avoid holding connections open and exhausting the pool limit.
+    default_conn_max_age = 0 if "pooler.supabase.com" in db_url else 600
+    conn_max_age = int(os.environ.get("CONN_MAX_AGE", default_conn_max_age))
+
     DATABASES = {
         "default": dj_database_url.config(
             default=db_url,
-            conn_max_age=600,
+            conn_max_age=conn_max_age,
             conn_health_checks=True,
         )
     }
+
+    # Supabase Transaction pooler (port 6543) requires server side cursors disabled
+    if "pooler.supabase.com" in db_url or os.environ.get("DISABLE_SERVER_SIDE_CURSORS"):
+        DATABASES["default"]["DISABLE_SERVER_SIDE_CURSORS"] = True
 elif os.environ.get("DB_ENGINE"):
     DATABASES = {
         "default": {

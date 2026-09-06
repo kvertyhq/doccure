@@ -25,6 +25,7 @@ urlpatterns = [
     path('departments', DepartmentListAPIView.as_view(), name='departments'),
     path('doctors', DoctorListAPIView.as_view(), name='doctors'),
     path('doctor-schedule', DoctorScheduleAPIView.as_view(), name='doctor_schedule'),
+    path('doctors/<int:doctor_id>/slots', DoctorScheduleAPIView.as_view(), name='doctor_slots'),
     path('my-appointments', MyAppointmentsAPIView.as_view(), name='my_appointments'),
     path('reschedule-appointment', RescheduleAppointmentAPIView.as_view(), name='reschedule_appointment'),
     path('cancel-appointment', CancelAppointmentAPIView.as_view(), name='cancel_appointment'),

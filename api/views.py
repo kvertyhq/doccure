@@ -1,3 +1,4 @@
+import json
 from datetime import datetime, date, timedelta
 from rest_framework import status
 from rest_framework.views import APIView
@@ -327,54 +328,52 @@ class DepartmentListAPIView(APIView):
 
     @cache_api_response()
     def get(self, request):
-        db_user = "unknown"
-        search_path = "unknown"
-        current_db = "unknown"
-        
-        try:
-            from django.db import connection
-            if connection.vendor == 'postgresql':
-                cursor = connection.cursor()
-                cursor.execute("SELECT current_user")
-                db_user = cursor.fetchone()[0]
-                
-                cursor.execute("SHOW search_path")
-                search_path = cursor.fetchone()[0]
-                
-                cursor.execute("SELECT current_database()")
-                current_db = cursor.fetchone()[0]
-            else:
-                db_user = "sqlite_user"
-                search_path = "N/A"
-                current_db = connection.settings_dict.get('NAME', 'sqlite_db')
-        except Exception:
-            pass
-
         try:
             specialties = Speciality.objects.filter(is_active=True)
             serializer = DepartmentSerializer(specialties, many=True)
+
+            summary_parts = []
+            raw_departments = []
+
+            for dept in serializer.data:
+                dept_name = dept.get("department", "")
+                doctors = dept.get("doctors", [])
+
+                if doctors:
+                    doc_strs = [
+                        f"{doc['name']} (ID: {doc['doctor_id']})"
+                        for doc in doctors
+                        if doc.get("name") and doc.get("doctor_id")
+                    ]
+                    if doc_strs:
+                        summary_parts.append(f"{dept_name}: {', '.join(doc_strs)}")
+
+                    raw_doctors = [
+                        {
+                            "doctor_id": doc["doctor_id"],
+                            "name": doc["name"]
+                        }
+                        for doc in doctors
+                        if doc.get("doctor_id") and doc.get("name")
+                    ]
+                    if raw_doctors:
+                        raw_departments.append({
+                            "department": dept_name,
+                            "doctors": raw_doctors
+                        })
+
+            summary = " | ".join(summary_parts)
+            raw_json_string = json.dumps(raw_departments, separators=(',', ':'))
+
             return Response({
                 "success": True,
-                "db_debug": {
-                    "current_user": db_user,
-                    "search_path": search_path,
-                    "current_database": current_db
-                },
-                "data": {
-                    "departments": serializer.data
-                }
+                "summary": summary,
+                "raw_json_string": raw_json_string
             })
         except Exception as e:
-            import traceback
             return Response({
                 "success": False,
-                "db_debug": {
-                    "current_user": db_user,
-                    "search_path": search_path,
-                    "current_database": current_db
-                },
-                "error": str(e),
-                "traceback": traceback.format_exc()
+                "message": str(e)
             }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
@@ -426,37 +425,18 @@ class DoctorScheduleAPIView(APIView):
     serializer_class = DoctorSerializer # fallback for documentation
 
     @cache_api_response()
-    def get(self, request):
+    def get(self, request, *args, **kwargs):
+        doctor_id = kwargs.get('doctor_id') or request.query_params.get('doctor_id') or request.query_params.get('id')
         name = request.query_params.get('name')
-        days_str = request.query_params.get('days', '7')
+        date_param = request.query_params.get('date')
 
-        if not name:
+        if not doctor_id and not name:
             return Response({
                 "success": False,
-                "message": "Doctor name is required."
+                "message": "doctor_id or name is required."
             }, status=status.HTTP_400_BAD_REQUEST)
 
-        try:
-            days = min(int(days_str), 30)
-        except ValueError:
-            days = 7
-
-        # Safely remove "Dr." or "Dr" prefix from the start of the name only
-        clean_name = name.strip()
-        if clean_name.lower().startswith("dr."):
-            clean_name = clean_name[3:].strip()
-        elif clean_name.lower().startswith("dr "):
-            clean_name = clean_name[3:].strip()
-        elif clean_name.lower() == "dr":
-            clean_name = ""
-
-        # Normalize spaces
-        clean_name = " ".join(clean_name.split())
-
-        from django.db.models.functions import Concat
-        from django.db.models import Value
-
-        doctor = User.objects.filter(
+        base_qs = User.objects.filter(
             role=User.RoleChoices.DOCTOR,
             is_active=True
         ).select_related(
@@ -475,13 +455,41 @@ class DoctorScheduleAPIView(APIView):
             'wednesday__time_range',
             'thursday__time_range',
             'friday__time_range'
-        ).annotate(
-            full_name=Concat('first_name', Value(' '), 'last_name')
-        ).filter(
-            Q(first_name__icontains=clean_name) | 
-            Q(last_name__icontains=clean_name) |
-            Q(full_name__icontains=clean_name)
-        ).first()
+        )
+
+        doctor = None
+        if doctor_id:
+            try:
+                doctor = base_qs.filter(id=int(doctor_id)).first()
+            except (ValueError, TypeError):
+                return Response({
+                    "success": False,
+                    "message": "Invalid doctor_id."
+                }, status=status.HTTP_400_BAD_REQUEST)
+
+        if not doctor and name:
+            # Safely remove "Dr." or "Dr" prefix from the start of the name only
+            clean_name = name.strip()
+            if clean_name.lower().startswith("dr."):
+                clean_name = clean_name[3:].strip()
+            elif clean_name.lower().startswith("dr "):
+                clean_name = clean_name[3:].strip()
+            elif clean_name.lower() == "dr":
+                clean_name = ""
+
+            # Normalize spaces
+            clean_name = " ".join(clean_name.split())
+
+            from django.db.models.functions import Concat
+            from django.db.models import Value
+
+            doctor = base_qs.annotate(
+                full_name=Concat('first_name', Value(' '), 'last_name')
+            ).filter(
+                Q(first_name__icontains=clean_name) | 
+                Q(last_name__icontains=clean_name) |
+                Q(full_name__icontains=clean_name)
+            ).first()
 
         if not doctor:
             return Response({
@@ -489,29 +497,61 @@ class DoctorScheduleAPIView(APIView):
                 "message": "Doctor not found."
             }, status=status.HTTP_404_NOT_FOUND)
 
-        today = date.today()
-        end_date = today + timedelta(days=days)
+        target_dates = []
+        if date_param:
+            try:
+                parsed_date = datetime.strptime(date_param.strip(), "%Y-%m-%d").date()
+                target_dates = [parsed_date]
+            except ValueError:
+                return Response({
+                    "success": False,
+                    "message": "Invalid date format. Expected YYYY-MM-DD."
+                }, status=status.HTTP_400_BAD_REQUEST)
+        else:
+            days_str = request.query_params.get('days', '7')
+            try:
+                days = min(max(int(days_str), 1), 30)
+            except ValueError:
+                days = 7
+            today = date.today()
+            target_dates = [today + timedelta(days=i) for i in range(days)]
+
+        min_date = min(target_dates)
+        max_date = max(target_dates)
         booked_slots = set(
             doctor.appointments.filter(
-                appointment_date__range=(today, end_date),
+                appointment_date__range=(min_date, max_date),
                 status__in=['pending', 'confirmed', 'completed']
             ).values_list('appointment_date', 'appointment_time')
         )
 
         schedule = {}
-        for i in range(days):
-            target_date = today + timedelta(days=i)
+        for target_date in target_dates:
             slots = get_available_slots_for_date(doctor, target_date, booked_slots=booked_slots)
             schedule[target_date.strftime("%Y-%m-%d")] = slots
 
-        return Response({
+        active_dates = [d for d, slots in schedule.items() if slots]
+        available_dates = ", ".join(active_dates)
+        slots_summary = " | ".join([f"{d}: {', '.join(schedule[d])}" for d in active_dates])
+
+        response_payload = {
             "success": True,
+            "doctor_id": doctor.id,
+            "doctor_name": f"Dr. {doctor.get_full_name()}",
+            "available_dates": available_dates,
+            "slots_summary": slots_summary,
             "data": {
                 "doctor_id": doctor.id,
                 "name": f"Dr. {doctor.get_full_name()}",
                 "available_slots": schedule
             }
-        })
+        }
+
+        if date_param:
+            date_key = target_dates[0].strftime("%Y-%m-%d")
+            response_payload["date_slots"] = ", ".join(schedule.get(date_key, []))
+
+        return Response(response_payload)
 
 
 class MyAppointmentsAPIView(APIView):
